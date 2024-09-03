@@ -58,7 +58,7 @@ In Q1 to Q3 and Q8 to Q17, they rated seven Likert-scale items from 1 (strongly 
 - [CASSIE](https://gitlab.inria.fr/D3/cassie)
 - [Math.Net](https://numerics.mathdotnet.com/)
 - [Meta XR All-in-One SDK](https://assetstore.unity.com/packages/tools/integration/meta-xr-all-in-one-sdk-269657)
-
+- [Barracuda](https://github.com/Unity-Technologies/barracuda-release)
 
 # License
 The code in this repository except for the external dependencies is provided under the MIT License. The external dependencies are provided under their respective licenses.
