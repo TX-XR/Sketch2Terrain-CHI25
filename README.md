@@ -58,7 +58,7 @@ Due to the use of the Mapbox SDK, the project could only run by Play Mode in Uni
 - 1. You can follow [Meta's official instruction](https://developer.oculus.com/documentation/unity/unity-before-you-begin/) to set up. The application has been tested on Unity 2022.2.19f1, but has not been tested on other.
 - 2. Clone this repository, or download the source code from Github.
 - 3. Open the Unity project with 2022.2.19f1. Find the correct scene in Assets > Scenes > VRSketching and doucle-click it.
-- 4.You are ready to play the project.
+- 4. You are ready to play the project.
 
 # Dependencies/external code
 - [Mapbox](https://www.mapbox.com/unity)
