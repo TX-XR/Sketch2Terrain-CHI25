@@ -3,4 +3,4 @@ Sketch2Terrain is a AI-Driven Real-Time Universal-Style Terrain Sketch Mapping i
 
 Sketch2Terrain introduces a pipeline that combines freehand mid-air sketching to create connected curve networks with generative Artificial Intelligence (AI), enabling the real-time generation of realistic and high-fidelity 3D terrain in under 100 milliseconds. Sketch2Terrain empowers non-experts to create concise and unambiguous sketch maps of natural environments. The system also serves as a comprehensive tool for researchers, providing a unified interface that supports the entire research workflow, including data collection, material preparation, and experimentation.
 
-![Alt text](/image/Teasor.png?raw=true "Optional Title")
+![Alt text](image/Teasor.png?raw=true "Optional Title")
