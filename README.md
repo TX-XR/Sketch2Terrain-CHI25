@@ -59,7 +59,28 @@ Due to the use of the Mapbox SDK, the project could only run by Play Mode in Uni
 2. Clone this repository or download the source code from GitHub.
 3. Open the Unity project with 2022.2.19f1. Find the correct scene in Assets > 3DMappingAI > Scenes > Sketch2Terrain_demo_scene and double-click it.
 4. You are ready to play the project.
+# Settings
+### Set up controller type and dominant hand
+From the top menu of the Unity Editor, navigate to **ApplicationSettings** > **ApplicationSettings** to open the **Application Settings** in Inspector.
 
+
+0 = HTC Vive
+1 = Oculus
+2 = Valve
+
+
+Open dominant_hand.txt and set your dominant hand:
+
+0 = right-handed
+1 = left-handed
+
+# Customize system settings
+You can try out different system settings (eg: distance thresholds for intersection detection) than those we chose in the paper, by creating your own ScriptableObject:
+
+In your project (for example in Assets/Parameters) right-click > Create > CASSIE Parameters. Customize the values.
+Change the parameters currently used in the Unity app: in the scene, find the Parameters GameObject. Under the script CASSIE Parameters Provider drag your new Parameters ScriptableObject under Current Parameters.
+The default values are the ones we used in the paper and user study. A detailed description of each parameter (units and effect) is provided, hover over the name to display the description.
+You can always come back to default parameters by dragging the ScriptableObject Default CASSIE Parameters to the Parameters GameObject.
 # Dependencies/external code
 - [Mapbox](https://www.mapbox.com/unity): for the terrain model generation.
 - [CASSIE](https://gitlab.inria.fr/D3/cassie): for the curve network creation and smoothing post-processing.
