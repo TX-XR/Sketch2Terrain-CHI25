@@ -11,5 +11,5 @@ The typical workflow for creating a 3D terrain with Sketch2Terrain is illustrate
 
 # User study
 
-![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Workflow.png?raw=true "The workflow.")
+![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Experiment_Setting.png?raw=true "The workflow.")
 
