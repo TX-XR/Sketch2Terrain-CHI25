@@ -19,3 +19,6 @@ We recruited 36 participants (17 females, 19 males), aged between 18 and 41 year
 ### The experimental design consisted of three main phases.
 ![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Experiment_Design.png?raw=true "Experimental design.")
 Experimental procedure: The experiment for 2D and 3D conditions was composed of tutorial and sketch mapping phases followed by the survey, while the AI condition had a voluntarily free creation phase (which is not shown in the picture). A different sketching interface was provided for each condition, as shown.
+
+### Sample sketches produced by participants in 2D, 3D and AI conditions for eight scenes.
+![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Example_Sketch.png?raw=true "Experimental design.")
