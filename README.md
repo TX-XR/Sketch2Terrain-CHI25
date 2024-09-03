@@ -55,3 +55,7 @@ In Q1 to Q3 and Q8 to Q17, they rated seven Likert-scale items from 1 (strongly 
 
 # Dependencies/external code
 Mapbox https://www.mapbox.com/unity 
+CASSIE https://gitlab.inria.fr/D3/cassie
+
+# License
+The code in this repository except for the external dependencies is provided under the MIT License. The external dependencies are provided under their respective licenses.
