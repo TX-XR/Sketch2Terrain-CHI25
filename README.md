@@ -8,10 +8,14 @@ Sketch2Terrain empowers non-experts to create concise and unambiguous sketch map
 ### Sketch2Terrain provides real-time terrain generation, allowing users to iteratively sketch and visualise for more accurate results.
 ![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Workflow.png?raw=true "The workflow.")
 The typical workflow for creating a 3D terrain with Sketch2Terrain is illustrated in the sequence. User-sketched strokes are highlighted in blue. The system automatically generates a well-connected curve network to facilitate terrain creation. As more strokes are added (progressing from (a) to (f)), the generated terrain becomes increasingly accurate. The second row from (g) to (l) shows the height map of the corresponding terrain model (altitude as color gradient).
+### Sketch2Terrain utilizes the widely recognized pix2pix model to facilitate the transformation between sketches and height map of terrain.
+![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Architecture.png?raw=true "The detail of the pipeline of the Pix2pix model.")
 
 # User study
-![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Experiment_Setting.png?raw=true "The workflow.")
-We recruited 36 participants (17 females, 19 males), aged between 18 and 41 years (M=25.00, SD=4.51), for a comprehensive user study in a controlled laboratory setting. We designed a between-subjects experiment with three conditions corresponding to 2D, 3D, and Generative 3D sketch mapping concepts, respectively: (1) 2D condition, (2) 3D condition, and (3) AI condition. 
+### Experiments were conducted in a controlled laboratory environment.
+![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Experiment_Setting.png?raw=true "Experimental setting.")
+We recruited 36 participants (17 females, 19 males), aged between 18 and 41 years (M=25.00, SD=4.51), for a comprehensive user study. We designed a between-subjects experiment with three conditions corresponding to 2D, 3D, and Generative 3D sketch mapping concepts, respectively: (1) 2D condition, (2) 3D condition, and (3) AI condition. 
 
-![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Experiment_Design.png?raw=true "The workflow.")
-Experimental procedure: The experiment for 2D and 3D conditions was composed of two phases followed by the survey, while the AI condition had a voluntarily free creation phase (which is not shown in the picture). A different sketching interface was provided for each condition, as shown.
+### The experimental design consisted of three main phases.
+![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Experiment_Design.png?raw=true "Experimental design.")
+Experimental procedure: The experiment for 2D and 3D conditions was composed of tutorial and sketch mapping phases followed by the survey, while the AI condition had a voluntarily free creation phase (which is not shown in the picture). A different sketching interface was provided for each condition, as shown.
