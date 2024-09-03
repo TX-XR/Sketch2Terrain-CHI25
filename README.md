@@ -9,5 +9,7 @@ Sketch2Terrain empowers non-experts to create concise and unambiguous sketch map
 ![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Workflow.png?raw=true "The workflow.")
 The typical workflow for creating a 3D terrain with Sketch2Terrain is illustrated in the sequence. User-sketched strokes are highlighted in blue. The system automatically generates a well-connected curve network to facilitate terrain creation. As more strokes are added (progressing from (a) to (f)), the generated terrain becomes increasingly accurate. The second row from (g) to (l) shows the height map of the corresponding terrain model (altitude as color gradient).
 
+# User study
 
+![Alt text]([https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Workflow.png](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Experiment_Setting.png)?raw=true "The workflow.")
 
