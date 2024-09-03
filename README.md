@@ -30,7 +30,7 @@ Experimental procedure: The experiment for 2D and 3D conditions was composed of 
 
 # Results
 ![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Statistics_results.png?raw=true "Statistics_results.")
-Bar plots of  (a) Terrain accuracy analysis measured by Intersection over Union (IoU) and Terrain Topology Score (TTS). (b) Landmark accuracy analysis measured by Landmark Topology Score (LTS) and Landmark Position Score (LPS). (c) Stroke number analysis. (d) Post-study questionnaire analysis. (e) User experience and task load analysis. The error bars indicate the 95\% confidence intervals. $\ast = p < .05$, $\ast\ast = p < .01$, $\ast\ast\ast = p < .001$.
+Bar plots of  (a) Terrain accuracy analysis measured by Intersection over Union (IoU) and Terrain Topology Score (TTS). (b) Landmark accuracy analysis measured by Landmark Topology Score (LTS) and Landmark Position Score (LPS). (c) Stroke number analysis. (d) Post-study questionnaire analysis. (e) User experience and task load analysis measured by SIM Task Load Index (SIM-TLX), the System Usability Scale (SUS), and the User Experience Questionnaire (UEQ). The error bars indicate the 95\% confidence intervals. $\ast = p < .05$, $\ast\ast = p < .01$, $\ast\ast\ast = p < .001$.
 
 ### Design of post-study questionnaire.
 In Q1 to Q3 and Q8 to Q17, they rated seven Likert-scale items from 1 (strongly disagree) to 7 (strongly agree). Q4 to Q7 were open-ended, and Q18 was a multi-choice question, allowing selection of "3D shape," "2D map," or "image" of the terrain. Q8 to Q17 was only applicable to the AI condition. 
