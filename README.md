@@ -60,10 +60,10 @@ Due to the use of the Mapbox SDK, the project could only run by Play Mode in Uni
 3. Open the Unity project with 2022.2.19f1. Find the correct scene in Assets > 3DMappingAI > Scenes > Sketch2Terrain_demo_scene and double-click it.
 4. You are ready to play the project.
 # Settings
-### Set up controller type and dominant hand
+### Set up dominant hand
 1. From the top menu of the Unity Editor, navigate to **Sketch2TerrainSetting > ExperimentSetting** to open the **Application Settings** in Inspector.
 2. Under the **Handness > Primary Hand** in Inspector, select Right Hand or Right Hand.
-
+3. Under the **Interface > Development Mode** in Inspector, select Data Collection for data collection mode, where researchers prepare training data for AI algorithms by tracing random terrain models.
 # Customize system settings
 You can try out different system settings (eg: distance thresholds for intersection detection) than those we chose in the paper, by creating your own ScriptableObject:
 
