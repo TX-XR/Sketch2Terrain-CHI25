@@ -54,8 +54,7 @@ In Q1 to Q3 and Q8 to Q17, they rated seven Likert-scale items from 1 (strongly 
 - **Q17**: How do you remember the terrain in your brain?
 
 # Installation
-Due to the use of the Mapbbox SDK, the project could only be run in Unity and then streamed in the Meta Quest series of headsets.
-
+Due to the use of the Mapbbox SDK, the project could only be run in Unity and then streamed in the Meta Quest series of headsets. You can follow [Meta's official instruction](https://developer.oculus.com/documentation/unity/unity-before-you-begin/) to set up 
 Install Unity 2019.3.9f1 from Unity's website. The app was not tested with other versions of Unity, and will be incompatible with newer versions of Unity such as 2020, due to us using the legacy VR input system.
 Install SteamVR if you do not have it already. This is necessary to have the input from VR headset and controllers working. We provide bindings for HTC Vive Wand, Oculus Touch controllers, Valve Knuckles. If you have another type of controller that is supported by SteamVR you should be able to setup your own bindings through the SteamVR
 Clone this repository, or download the source code from Gitlab UI.
