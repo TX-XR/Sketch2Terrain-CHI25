@@ -61,7 +61,7 @@ Due to the use of the Mapbox SDK, the project could only run by Play Mode in Uni
 4. You are ready to play the project.
 # Settings
 ### Set up controller type and dominant hand
-From the top menu of the Unity Editor, navigate to **ApplicationSettings** > **ApplicationSettings** to open the **Application Settings** in Inspector.
+From the top menu of the Unity Editor, navigate to **Sketch2TerrainSetting** > **ExperimentSetting** to open the **Application Settings** in Inspector.
 
 
 0 = HTC Vive
