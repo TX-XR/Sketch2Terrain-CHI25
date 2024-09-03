@@ -61,12 +61,12 @@ Due to the use of the Mapbox SDK, the project could only run by Play Mode in Uni
 4. You are ready to play the project.
 
 # Dependencies/external code
-- [Mapbox](https://www.mapbox.com/unity)
-- [CASSIE](https://gitlab.inria.fr/D3/cassie)
-- [Math.Net](https://numerics.mathdotnet.com/)
-- [Meta XR All-in-One SDK](https://assetstore.unity.com/packages/tools/integration/meta-xr-all-in-one-sdk-269657)
-- [Barracuda](https://github.com/Unity-Technologies/barracuda-release)
-- [otss-off-the-shelf-stylus](https://gitlab2.informatik.uni-wuerzburg.de/hci-development/otss-off-the-shelf-stylus)
+- [Mapbox](https://www.mapbox.com/unity): for the terrain model generation.
+- [CASSIE](https://gitlab.inria.fr/D3/cassie): for the curve network creation and smoothing post-processing.
+- [Math.Net](https://numerics.mathdotnet.com/): included in the project.
+- [Meta XR All-in-One SDK](https://assetstore.unity.com/packages/tools/integration/meta-xr-all-in-one-sdk-269657): for spatial anchor, pass through, and interaction.
+- [Barracuda](https://github.com/Unity-Technologies/barracuda-release): for the coupling between the AR system and the AI mode.
+- [otss-off-the-shelf-stylus](https://gitlab2.informatik.uni-wuerzburg.de/hci-development/otss-off-the-shelf-stylus): for aligning the virtual surface to the physical table.
 
 # License
 The code in this repository except for the external dependencies is provided under the MIT License. The external dependencies are provided under their respective licenses.
