@@ -54,12 +54,11 @@ In Q1 to Q3 and Q8 to Q17, they rated seven Likert-scale items from 1 (strongly 
 - **Q17**: How do you remember the terrain in your brain?
 
 # Installation
-Due to the use of the Mapbbox SDK, the project could only be run in Unity and then streamed in the Meta Quest series of headsets. You can follow [Meta's official instruction](https://developer.oculus.com/documentation/unity/unity-before-you-begin/) to set up 
-Install Unity 2019.3.9f1 from Unity's website. The app was not tested with other versions of Unity, and will be incompatible with newer versions of Unity such as 2020, due to us using the legacy VR input system.
-Install SteamVR if you do not have it already. This is necessary to have the input from VR headset and controllers working. We provide bindings for HTC Vive Wand, Oculus Touch controllers, Valve Knuckles. If you have another type of controller that is supported by SteamVR you should be able to setup your own bindings through the SteamVR
-Clone this repository, or download the source code from Gitlab UI.
-Open the Unity project with 2019.3.9f1. Find the correct scene in Assets > Scenes > VRSketching and doucle-click it.
-You are ready to build and play the project
+Due to the use of the Mapbox SDK, the project could only run by Play Mode in Unity and then stream in the Meta Quest series of headsets.
+- 1. You can follow [Meta's official instruction](https://developer.oculus.com/documentation/unity/unity-before-you-begin/) to set up. The application has been tested on Unity 2022.2.19f1, but has not been tested on other.
+- 2. Clone this repository, or download the source code from Github.
+- 3. Open the Unity project with 2022.2.19f1. Find the correct scene in Assets > Scenes > VRSketching and doucle-click it.
+- 4.You are ready to play the project.
 
 # Dependencies/external code
 - [Mapbox](https://www.mapbox.com/unity)
