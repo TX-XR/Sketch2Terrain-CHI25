@@ -54,13 +54,10 @@ In Q1 to Q3 and Q8 to Q17, they rated seven Likert-scale items from 1 (strongly 
 - **Q17**: How do you remember the terrain in your brain?
 
 # Dependencies/external code
-[Mapbox](https://www.mapbox.com/unity)
-
-[CASSIE](https://gitlab.inria.fr/D3/cassie)
-
-[Math.Net](https://numerics.mathdotnet.com/)
-
-[Meta XR All-in-One SDK](https://assetstore.unity.com/packages/tools/integration/meta-xr-all-in-one-sdk-269657)
+- [Mapbox](https://www.mapbox.com/unity)
+- [CASSIE](https://gitlab.inria.fr/D3/cassie)
+- [Math.Net](https://numerics.mathdotnet.com/)
+- [Meta XR All-in-One SDK](https://assetstore.unity.com/packages/tools/integration/meta-xr-all-in-one-sdk-269657)
 
 
 # License
