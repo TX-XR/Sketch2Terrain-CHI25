@@ -64,7 +64,9 @@ Due to the use of the Mapbox SDK, the project could only run by Play Mode in Uni
 1. From the top menu of the Unity Editor, navigate to **Sketch2TerrainSetting > ExperimentSetting** to open the **Application Settings** in Inspector.
 2. Under the **Handness > Primary Hand** in Inspector, select Right Hand or Right Hand.
 3. Under the **Interface > Development Mode** in Inspector, select **Data Collection** for data collection mode, where researchers prepare training data for AI algorithms by tracing random terrain models; select **MaterialPreparation** for Material preparation mode, where researchers prepare example sketches for experiment; select **Experimentation** for Experimentation mode, where participants follow the experimental procedure to complete the experiment session.
-4. Under the **Interface > Mapbox Access Token** in Inspector, paste your [Mapbox access token](https://www.mapbox.com/install/unity/permission). 
+4. **IMPORTANT!!**: Under the **Interface > Mapbox Access Token** in Inspector, paste your [Mapbox access token](https://www.mapbox.com/install/unity/permission).
+5. 
+
 # Customize system settings
 You can try out different system settings (eg: distance thresholds for intersection detection) than those we chose in the paper, by creating your own ScriptableObject:
 
