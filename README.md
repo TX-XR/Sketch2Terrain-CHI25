@@ -1,6 +1,5 @@
-# Sketch2Terrain
-Sketch2Terrain is a AI-Driven Real-Time Universal-Style Terrain Sketch Mapping in AR. Sketch mapping is an established research tool to study human spatial decision-making and information processing by externalizing one's spatial knowledge through sketches. We present Sketch2Terrain, an advanced generative 3D sketch mapping system that revolutionizes how we create sketch maps using Augmented Reality (AR). Sketch2Terrain introduces a pipeline that combines freehand mid-air sketching to create connected curve networks with generative Artificial Intelligence (AI), enabling the real-time generation of realistic and high-fidelity 3D terrain in under 100 milliseconds. 
-
+# Sketch2Terrain: AI-Driven Real-Time Universal-Style Terrain Sketch Mapping in AR
+### Sketch2Terrain, advanced generative 3D sketch mapping system that revolutionizes how we create sketch maps using Augmented Reality (AR)
 ![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Teasor.png?raw=true "The apparatus and workflow of the interface.")
 
 # Target users
