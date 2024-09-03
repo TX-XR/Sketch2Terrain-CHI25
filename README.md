@@ -29,3 +29,4 @@ Experimental procedure: The experiment for 2D and 3D conditions was composed of 
 ![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Example_Sketch.png?raw=true "Experimental design.")
 
 # Results
+![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Example_Sketch.png?raw=true "Statistics_results.")
