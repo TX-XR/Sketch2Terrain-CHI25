@@ -61,18 +61,8 @@ Due to the use of the Mapbox SDK, the project could only run by Play Mode in Uni
 4. You are ready to play the project.
 # Settings
 ### Set up controller type and dominant hand
-From the top menu of the Unity Editor, navigate to **Sketch2TerrainSetting** > **ExperimentSetting** to open the **Application Settings** in Inspector.
-
-
-0 = HTC Vive
-1 = Oculus
-2 = Valve
-
-
-Open dominant_hand.txt and set your dominant hand:
-
-0 = right-handed
-1 = left-handed
+1. From the top menu of the Unity Editor, navigate to **Sketch2TerrainSetting > ExperimentSetting** to open the **Application Settings** in Inspector.
+2. Under the **Handness > Primary Hand** in Inspector, select Right Hand or Right Hand.
 
 # Customize system settings
 You can try out different system settings (eg: distance thresholds for intersection detection) than those we chose in the paper, by creating your own ScriptableObject:
