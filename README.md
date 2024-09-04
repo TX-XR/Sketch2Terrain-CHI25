@@ -135,14 +135,16 @@ In the Data collection mode under 3D condition, the sketch and terrain model wil
 Under AI condition, height map and texture of the AI-generated shape will also be saved as `AI_heightmap.png` and `AI_Texture.png` while the mesh of the AI-generated shape will be saved in `Strokes.obj`, too.
 
 To sum up:
-1. Strokes.obj: an OBJ file with a mesh corresponding to the strokes in the current sketch, rendered as tubular meshes.
-2. Strokes.curves: a file that stores all strokes in the current sketch as polylines. This is designed as a super easy format to import in other systems that treat 3D polylines.
-3. LerpStrokes.curves: a file that normalizes the raw data of the polylines into the size of the workspace with x and y coordinate ranges from -0.2 ~ 0.2 and z coordinate range from 0 ~ 0.4, aligned with the workspace. This is designed to align the polylines to the terrain model in the training data of the AI model.
-4. graph.json: a file that stores the graph data structure of the current sketch.
-5. Terrain.obj: an OBJ file with a mesh corresponding to the terrain model.
-6. Terrain.png: a PNG file for the terrain model's texture.
-7. Terrain_heightmap.png: a PNG file for the terrain model's heightmap normalized ranges from 0 ~ 1.
-8. [Study]_[timestamp].json: a log of the entire sketching session.
+1. `Strokes.obj`: an OBJ file with a mesh corresponding to the strokes in the current sketch, rendered as tubular meshes.
+2. `Strokes.curves`: a file that stores all strokes in the current sketch as polylines. This is designed as a super easy format to import in other systems that treat 3D polylines.
+3. `LerpStrokes.curves`: a file that normalizes the raw data of the polylines into the size of the workspace with x and y coordinate ranges from -0.2 ~ 0.2 and z coordinate range from 0 ~ 0.4, aligned with the workspace. This is designed to align the polylines to the terrain model in the training data of the AI model.
+4. `graph.json`: a file that stores the graph data structure of the current sketch.
+5. `Terrain.obj`: an OBJ file with a mesh corresponding to the terrain model.
+6. `Terrain.png`: a PNG file for the terrain model's texture.
+7. `Terrain_heightmap.png`: a PNG file for the terrain model's heightmap normalized ranges from 0 ~ 1, with 1 means the height of the workspace (0.4m).
+8. `AI_Texture.png`: a PNG file for the AI-generated shape's texture.
+7. `AI_heightmap.png`: a PNG file for the AI-generated shape's heightmap normalized ranges from 0 ~ 1, with 1 means the height of the workspace (0.4m).
+9. `[Study]_[timestamp].json`: a log of the entire sketching session.
 
 ### Dependencies/external code
 - [Mapbox](https://www.mapbox.com/unity): for the terrain model generation.
