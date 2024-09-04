@@ -126,7 +126,9 @@ The design of the interface applies a redundant control system. The experimenter
 - `L`:Load the workspace from spatial anchor.
 
 ### Saving the sketches
-In the `Experimentation mode,` the sketches will be saved automatically when changed to the next phase/scene. In the `Data collection mode` and `Material preparation mode`, the sketches will be saved by pressing the `SAVE` virtual button on the table. You can find the saving result under the **Assets > SketchData~** folder.
+All exported files will be available in the **Assets > SketchData~** folder if playing from the editor.
+
+In the `Experimentation mode,` the sketches will be saved automatically when changed to the next phase/scene. In the `Data collection mode` and `Material preparation mode`, the sketches will be saved by pressing the `SAVE` virtual button on the table.
 
 In the Data collection mode under 3D condition, the sketch and terrain model will be saved as `Strokes.obj` and `Terrain.obj` files. The raw data for the control points of each stroke will be saved in a `Strokes.curves` file. The height map and texture of the terrain will also be saved as `Terrain.png` and `Terrain_heightmap.png` files.
 
