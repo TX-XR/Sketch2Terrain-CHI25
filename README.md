@@ -14,12 +14,14 @@ Sketch mapping is an established research tool to study human spatial decision-m
 ### Sketch2Terrain offers a homogeneous system for different modes with customizable functions tailored to specific needs.
 ![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Interface_while.png?raw=true "The interface design.")
 (a) Observation Task Interface: This interface includes only the height adjustment function. An instruction panel displays task descriptions and timing information in front of the workspace. (b) Drawing Task Interface: This interface offers height adjustment, color change, redo, undo, and eraser functions. An instruction panel presents task descriptions and timing in front of the workspace. (c) Data Collection Mode Interface: By default, this interface uses a blue color scheme and includes functions for changing the terrain model and saving data.
+
 <!-- ### Sketch2Terrain provides real-time terrain generation, allowing users to iteratively sketch and visualise for more accurate results.
 ![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Workflow.png?raw=true "The workflow.")
 The typical workflow for creating a 3D terrain with Sketch2Terrain is illustrated in the sequence. User-sketched strokes are highlighted in blue. The system automatically generates a well-connected curve network to facilitate terrain creation. As more strokes are added (progressing from (a) to (f)), the generated terrain becomes increasingly accurate. The second row from (g) to (l) shows the height map of the corresponding terrain model (altitude as color gradient). -->
+
 ### Sketch2Terrain utilizes the widely recognized pix2pix model to facilitate the transformation between sketches and height map of terrain.
 ![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Architecture.png?raw=true "The detail of the pipeline of the Pix2pix model.")
-(a) The architecture of the AI model. (b) Performance versus model size and inference time. The area of the markers indicates the model size. (c) Comparison between the inference results for the Pix2Pix and diffusion-based models.
+(a) The architecture of the AI model. (b) Performance versus model size and inference time. (c) Comparison between the inference results for the Pix2Pix and diffusion-based models.
 
 <h1 align="center">User study</h1>
 
@@ -63,7 +65,7 @@ In Q1 to Q3 and Q8 to Q17, they rated seven Likert-scale items from 1 (strongly 
 <h1 align="center">Installation</h1>
 
 Due to the use of the Mapbox SDK, the project could only run by Play Mode in Unity and then stream in the Meta Quest series of headsets.
-1. You can follow [Meta Developer Instructions](https://developer.oculus.com/documentation/unity/unity-before-you-begin/) to set up. The application has been tested on Unity 2022.2.19f1 but has not been tested on others.
+1. Follow [Meta Developer Instructions](https://developer.oculus.com/documentation/unity/unity-before-you-begin/) to set up. The application has been tested on Unity 2022.2.19f1 but has not been tested on others.
 2. Clone this repository or download the source code from GitHub.
 3. Open the Unity project with 2022.2.19f1. Find the correct scene in Assets > 3DMappingAI > Scenes > Sketch2Terrain_demo_scene and double-click it.
 4. You are ready to play the project.
@@ -77,7 +79,7 @@ Due to the use of the Mapbox SDK, the project could only run by Play Mode in Uni
 
 ### Customize system settings
 You can try out different system settings by creating your own ScriptableObject:
-In your project (for example in Assets/Parameters) right-click > Create > CASSIE Parameters. Customize the values.
+In your project (for example in Assets/Parameters) right-click > Create > Parameters. Customize the values.
 Change the parameters currently used in the Unity app: in the scene, find the Parameters GameObject. Under the script CASSIE Parameters Provider drag your new Parameters ScriptableObject under Current Parameters.
 The default values are the ones we used in the paper and user study. A detailed description of each parameter (units and effect) is provided, hover over the name to display the description.
 You can always come back to default parameters by dragging the ScriptableObject Default CASSIE Parameters to the Parameters GameObject.
