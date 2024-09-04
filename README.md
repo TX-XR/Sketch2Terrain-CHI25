@@ -105,6 +105,14 @@ After you feel confident about the interface, press the `Thumbstick` button to m
 
 For a detailed tutorial, you can watch the instructions video.
 
+### Keyboard control
+The design of the interface applies a redundant control system. The experimenter can also control the interface by pressing the keyboard.
+- `X`:Export the sketch
+- `Q`:Jump to the next study (after pressing the `Q` button, the system will ask for confirmation, you can press `Q` again for confirmation or `W` to go back)
+- `W`:Back to the current study
+- `E`:Skip the Observation phase in the sketch mapping task.
+- `L`:Load the workspace from spatial anchor.
+
 ### Dependencies/external code
 - [Mapbox](https://www.mapbox.com/unity): for the terrain model generation.
 - [CASSIE](https://gitlab.inria.fr/D3/cassie): for the curve network creation and smoothing post-processing.
