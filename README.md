@@ -80,7 +80,7 @@ Due to the use of the Mapbox SDK, the project could only run by Play Mode in Uni
 ### Customize system settings
 You can try out different system settings by creating your own ScriptableObject:
 
-In your project (for example in Assets/Parameters) right-click > Create > Parameters. Customize the values.
+In your project (for example in Assets/Parameters) **right-click > Create > Parameters**. Customize the values.
 
 Change the parameters currently used in the Unity app: in the scene, find the **Manager** GameObject. Under the script **Parameters Manager** drag your new Parameters ScriptableObject under Current Parameters.
 
