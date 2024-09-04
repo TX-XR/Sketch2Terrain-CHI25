@@ -88,15 +88,17 @@ Change the parameters currently used in the Unity app: in the scene, find the **
 The default values are the ones we used in the paper and user study. A detailed description of each parameter (units and effect) is provided, hover over the name to display the description. You can always come back to default parameters by dragging the ScriptableObject Default Parameters to the Parameters GameObject.
 
 <h1 align="center">How to use the application</h1>
+
 ### Align the workspace to table
+
 When you first get into the **Play Mode** in Unity, you are in the **Surface Calibration** phase. Your dominant hand's controller is visualized as a stylus, while your non-dominant hand is visualized as a controller. You should first put the stylus on the left corner of a table and press the `X: Calibrate` button on the non-dominant controller. Then you repeat this process for the right corner of a table. After you calibrate the workspace, the UI will be loaded and you can start sketching. 
 
 After the first time calibrating the workspace, the location of the table is stored in the spatial anchor. You can directly load the workspace by pressing the `trigger` button on the non-dominant controller. 
 
-### Align the workspace to table
-In the VR scene, you should see a cheatsheet that displays the available controls on your controller (if you don't see the correct controller type, you need to set it, see above). The blue dot corresponds to the dominant hand, and the grey dot corresponds to the non-dominant hand. You can also find the cheatsheet for all 3 controller types here.
-If your dominant hand dot is orange, you are in "freehand sketching" mode, with none of the neatening and surfacing feature. When your dominant hand dot is blue, you have neatening and predictive surfacing enabled. To toggle between these 2 modes, press the trigger of your non-dominant hand.
-For a detailed tutorial, you can watch the instructions video for the remote user study we ran. There are a few irrelevant bits, such as information about the study task itself and how to send data back to us, please use the time labels to skip those.
+### Experimentation mode
+Assuming you are in `Experimentation mode`, you will first enter a tutorial phase.
+
+For a detailed tutorial, you can watch the instructions video.
 
 ### Dependencies/external code
 - [Mapbox](https://www.mapbox.com/unity): for the terrain model generation.
