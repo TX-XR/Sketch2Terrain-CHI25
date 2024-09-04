@@ -62,10 +62,10 @@ In Q1 to Q3 and Q8 to Q17, they rated seven Likert-scale items from 1 (strongly 
 
 <h1 align="center">Installation</h1>
 
-Due to the use of the Mapbox SDK, the project could only run by Play Mode in Unity and then stream in the Meta Quest series of headsets. 
+Due to the use of the Mapbox SDK, the project could only run by `Play Mode` in Unity and then stream in the Meta Quest series of headsets. 
 
 **🔴IMPORTANT🔴** We highly recommend using the [Meta Quest Link cable](https://www.meta.com/ch/en/quest/accessories/link-cable/) to reduce the latency of the streaming. 
-### Steps 
+### Steps for setting up
 1. Follow [Meta Developer Instructions](https://developer.oculus.com/documentation/unity/unity-before-you-begin/) to set up Unity for XR development and import Meta XR packages.
 2. The application has been tested on Unity 2022.2.19f1 but has not been tested on others.
 3. Clone this repository or download the source code from GitHub.
