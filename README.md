@@ -98,13 +98,10 @@ The default values are the ones we used in the paper and user study. A detailed 
 
 When you first get into the `Play Mode` in Unity, you are in the `Surface Calibration` phase. Your dominant hand's controller is visualized as a stylus, while your non-dominant hand is visualized as a controller. You should first put the stylus on the left corner of a table and press the `X: Calibrate` button on the non-dominant controller. Then you repeat this process for the right corner of a table. After you calibrate the workspace, the UI will be loaded and you can start sketching. After the first time calibrating the workspace, the location of the table is stored in the spatial anchor. You can directly load the workspace by pressing the `trigger` button on the non-dominant controller. 
 
-
 ### Experimentation mode
-Assuming you are in `Experimentation mode`, you will first enter a tutorial phase. In the tutorial phase, you will see an example terrain model in the workspace and an example sketch on the left. You can press the `trigger` on the dominant hand to sketch. When you sketch, the example terrain model will disappear, which imitates the real `sketch mapping task`. In the `sketch mapping task`, participants need to externalize their cognitive map of terrain from memory, so the terrain model will disappear. Because it is the tutorial phase, so the terrain will appear again after you release the `trigger` button to end a stroke.
+Assuming you are in `Experimentation mode`, you will first enter a tutorial phase. In the tutorial phase, you will see an example terrain model in the workspace and an example sketch on the left. You can press the `Grip` on the dominant hand to sketch. When you sketch, the example terrain model will disappear, which imitates the real `sketch mapping task`. In the `sketch mapping task`, participants need to externalize their cognitive map of terrain from memory, so the terrain model will disappear. Because it is the tutorial phase, so the terrain will appear again after you release the `Grip` button to end a stroke. There are some virtual buttons on the table. You can view the interface design images to see what these buttons do.
 
-
-
-There are some virtual buttons on the table. You can view the interface design images to see what these buttons do.
+After you feel confident about the interface, press the `Thumbstick` button to move to the next phase: The sketch mapping task.
 
 For a detailed tutorial, you can watch the instructions video.
 
