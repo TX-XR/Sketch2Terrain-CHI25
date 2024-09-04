@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/3DMappingAI/Scenes/Menu.unity
+    guid: 3ec0b02157fdd8343ab8ab6c5f765562
+  - enabled: 1
+    path: Assets/3DMappingAI/Scenes/Sketch2Terrain_demo_scene.unity
+    guid: 1f464d1f1ec4caa40a6b29c079efd327
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: dd755a52e1f84d44296e17b5cb189c9d,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: da54a197b55985d47851d1085a623b94,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 24e8e4d6bc6236941973cb5bc5ee498c,
+      type: 2}

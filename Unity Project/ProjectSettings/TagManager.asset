@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Whiteboard
+  - Tip
+  - TextureSurface
+  - DebugText
+  - SketchSurface
+  - Stroke
+  - Eraser
+  - TableSurface
+  - SketchRangeCollider
+  - UserInterface
+  - DrawingSurface
+  - HideInMidAir
+  - RenderTextureCamera
+  - FinalStroke
+  - BrushCollider
+  - Cassie
+  - InputStroke
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - TerrainLayer
+  - 
+  - SketchSurface
+  - TextureSurface
+  - VideoRecording
+  - InfoLayer
+  - StrokeLayer
+  - StrokeCamera
+  - GridLayer
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: InfoLayer
+    uniqueID: 1314493091
+    locked: 0
+  - name: StrokeLayer
+    uniqueID: 3235113579
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: TerrainLayer
+    uniqueID: 276725263
+    locked: 0
+  - name: GridLayer
+    uniqueID: 653003323
+    locked: 0
