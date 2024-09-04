@@ -79,10 +79,13 @@ Due to the use of the Mapbox SDK, the project could only run by Play Mode in Uni
 
 ### Customize system settings
 You can try out different system settings by creating your own ScriptableObject:
+
 In your project (for example in Assets/Parameters) right-click > Create > Parameters. Customize the values.
-Change the parameters currently used in the Unity app: in the scene, find the Parameters GameObject. Under the script CASSIE Parameters Provider drag your new Parameters ScriptableObject under Current Parameters.
+
+Change the parameters currently used in the Unity app: in the scene, find the Parameters GameObject. Under the script Parameters Provider drag your new Parameters ScriptableObject under Current Parameters.
+
 The default values are the ones we used in the paper and user study. A detailed description of each parameter (units and effect) is provided, hover over the name to display the description.
-You can always come back to default parameters by dragging the ScriptableObject Default CASSIE Parameters to the Parameters GameObject.
+You can always come back to default parameters by dragging the ScriptableObject Default Parameters to the Parameters GameObject.
 ### Dependencies/external code
 - [Mapbox](https://www.mapbox.com/unity): for the terrain model generation.
 - [CASSIE](https://gitlab.inria.fr/D3/cassie): for the curve network creation and smoothing post-processing.
