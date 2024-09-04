@@ -71,8 +71,8 @@ Due to the use of the Mapbox SDK, the project could only run by Play Mode in Uni
 4. You are ready to play the project.
 ### Settings
 1. From the top menu of the Unity Editor, navigate to **Sketch2TerrainSetting > ExperimentSetting** to open the **Application Settings** in Inspector.
-2. **🔴IMPORTANT🔴**: Under the **Interface > Mapbox Access Token** in Inspector, paste your [Mapbox access token](https://www.mapbox.com/install/unity/permission).
-3. Under the **Handness > Primary Hand** in Inspector, select Right Hand or Right Hand.
+2. **🔴IMPORTANT🔴**: Under the **Mapbox > Mapbox Access Token** in Inspector, paste your [Mapbox access token](https://www.mapbox.com/install/unity/permission).
+3. Under the **Handness > Primary Hand** in Inspector, select Right Hand or Left Hand.
 4. Under the **Interface > Development Mode** in Inspector, select **Data Collection** for data collection mode, where researchers prepare training data for AI algorithms by tracing random terrain models; select **MaterialPreparation** for Material preparation mode, where researchers prepare example sketches for experiment; select **Experimentation** for Experimentation mode, where participants follow the experimental procedure to complete the experiment session.
 5. Under the **Interface > Experiment Condition** in Inspector, select **2D** for 2D Sketch Mapping, where participants can only sketch on a flat canvas in a 2D workspace; select **3D** for 3D Sketch Mapping, where participants can sketch 3D strokes in a 3D workspace; select **AI** for Generative 3D Sketch Mapping, where AI generates 3D terrain shapes based on sketches.
 6. Under the **Interface > Participant ID** in Inspector, insert a number for the identator.
