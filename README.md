@@ -128,6 +128,10 @@ The design of the interface applies a redundant control system. The experimenter
 ### Saving the sketches
 In the `Experimentation mode,` the sketches will be saved automatically when changed to the next phase/scene. In the `Data collection mode` and `Material preparation mode`, the sketches will be saved by pressing the `SAVE` virtual button on the table. You can find the saving result under the **Assets > SketchData~** folder.
 
+In the Data collection mode under 3D condition, the sketch and terrain model will be saved as `Strokes.obj` and `Terrain.obj` files. The raw data for the control points of each stroke will be saved in a `Strokes.curves` file. The height map and texture of the terrain will also be saved as `Terrain.png` and `Terrain_heightmap.png` files.
+
+Under AI condition, height map and texture of the AI-generated shape will also be saved as `AI_heightmap.png` and `AI_Texture.png` while the mesh of the AI-generated shape will be saved in `Strokes.obj`, too.
+
 ### Dependencies/external code
 - [Mapbox](https://www.mapbox.com/unity): for the terrain model generation.
 - [CASSIE](https://gitlab.inria.fr/D3/cassie): for the curve network creation and smoothing post-processing.
