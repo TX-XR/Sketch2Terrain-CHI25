@@ -83,6 +83,10 @@ In your project (for example in Assets/Parameters) **right-click > Create > Para
 Change the parameters currently used in the Unity app: in the scene, find the **Manager** GameObject. Under the script **Parameters Manager** drag your new Parameters ScriptableObject under Current Parameters.
 
 The default values are the ones we used in the paper and user study. A detailed description of each parameter (units and effect) is provided, hover over the name to display the description. You can always come back to default parameters by dragging the ScriptableObject Default Parameters to the Parameters GameObject.
+
+<h1 align="center">How to use the application</h1>
+
+
 ### Dependencies/external code
 - [Mapbox](https://www.mapbox.com/unity): for the terrain model generation.
 - [CASSIE](https://gitlab.inria.fr/D3/cassie): for the curve network creation and smoothing post-processing.
