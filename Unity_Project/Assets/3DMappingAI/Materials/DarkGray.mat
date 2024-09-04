@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DarkGray
+  m_Shader: {fileID: 4800000, guid: fb9e10816a61c4d43ae7468f5ba93c33, type: 3}
+  m_Parent: {fileID: 2100000, guid: 924d3bb27df5e7847a4758f9d51e836d, type: 2}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _GLOSSYREFLECTIONS_OFF
+  - _SPECULARHIGHLIGHTS_OFF
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _GlossyReflections: 0
+    - _SpecularHighlights: 0
+    m_Colors:
+    - _Color: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 1}
+  m_BuildTextureStacks: []
