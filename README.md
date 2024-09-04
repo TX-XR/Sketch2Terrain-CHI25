@@ -98,7 +98,7 @@ When you first get into the `Play Mode` in Unity, you are in the `Surface Calibr
 After the first time calibrating the workspace, the location of the table is stored in the spatial anchor. You can directly load the workspace by pressing the `trigger` button on the non-dominant controller. 
 
 ### Experimentation mode
-Assuming you are in `Experimentation mode`, you will first enter a tutorial phase.
+Assuming you are in `Experimentation mode`, you will first enter a tutorial phase. In the tutorial phase, you will see an example terrain model in the workspace and an example sketch on the left. You can press the `trigger` on the dominant hand to sketch. When you sketch, the example terrain model will disappear, which imitates the real `sketch mapping task`. In the `sketch mapping task`, participants need to externalize their cognitive map of terrain from memory, so the terrain model will disappear. Because it is the tutorial phase, so the terrain will appear again after you release the `trigger` button to end a stroke.
 
 For a detailed tutorial, you can watch the instructions video.
 
