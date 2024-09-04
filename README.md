@@ -70,7 +70,7 @@ Due to the use of the Mapbox SDK, the project could only run by Play Mode in Uni
 4. Open the Unity Project with 2022.2.19f1. Find the correct scene in Assets > 3DMappingAI > Scenes > Sketch2Terrain_demo_scene and double-click it.
 5. From the top menu of the Unity Editor, navigate to **Edit > Build Settings** to switch the Platform into Android.
 6. You are ready to play the project.
-### Settings
+### Customize Experiment and Mode Settings
 1. From the top menu of the Unity Editor, navigate to **Sketch2TerrainSetting > ExperimentSetting** to open the **Application Settings** in Inspector.
 2. **🔴IMPORTANT🔴**: Under the **Mapbox > Mapbox Access Token** in Inspector, paste your [Mapbox access token](https://www.mapbox.com/install/unity/permission).
 3. Under the **Handness > Primary Hand** in Inspector, select Right Hand or Left Hand.
