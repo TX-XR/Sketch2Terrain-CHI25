@@ -112,15 +112,21 @@ The observation phase will last 2 minutes and the drawing phase will last 5 minu
 For a detailed tutorial, you can watch the instructions video.
 
 ### Data collection mode
-In this mode, researchers can generate a random terrain model by pressing the "Next Terrain" button or revert to the previous terrain by pressing the "Previous Terrain" button on the table. After generating the terrain, researchers trace the main structure by drawing. Once the drawing is complete, the sketch and terrain information—including the height map, mesh model of the terrain, control points, and mesh model of the strokes, are saved as training data for the AI model by press the `SAVE` virtual button on the table. 
+In this mode, researchers can generate a random terrain model by pressing the "Next Terrain" button or revert to the previous terrain by pressing the "Previous Terrain" button on the table. After generating the terrain, researchers trace the main structure by drawing. Once the drawing is complete, the sketch and terrain information—including the height map, mesh model of the terrain, control points, and mesh model of the strokes, are saved as training data for the AI model by press the `SAVE` virtual button on the table. Strokes can be snapped to the terrain model within a set threshold to enhance data quality.
+
+### Material preparation mode
+The material preparation mode allows researchers to create experimental materials for different conditions. In this mode, 3D sketches are also projected in 2D and exported separately to maintain consistency between 2D and 3D example sketches. Similar to the data collection mode, strokes can be snapped to the terrain model. 
 
 ### Keyboard control
 The design of the interface applies a redundant control system. The experimenter can also control the interface by pressing the keyboard.
 - `X`:Export the sketch
-- `Q`:Jump to the next study (after pressing the `Q` button, the system will ask for confirmation, you can press `Q` again for confirmation or `W` to go back)
+- `Q`:Change to the next phase/scene (after pressing the `Q` button, the system will ask for confirmation, you can press `Q` again for confirmation or `W` to go back)
 - `W`:Back to the current study
 - `E`:Skip the Observation phase in the sketch mapping task.
 - `L`:Load the workspace from spatial anchor.
+
+### Saving the sketches
+In the `Experimentation mode,` the sketches will be saved automatically when changed to the next phase/scene. In the `Data collection mode` and `Material preparation mode`, the sketches will be saved by pressing the `SAVE` virtual button on the table. You can find the saving result under the **Assets > SketchData~** folder.
 
 ### Dependencies/external code
 - [Mapbox](https://www.mapbox.com/unity): for the terrain model generation.
