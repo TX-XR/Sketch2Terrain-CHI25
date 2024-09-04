@@ -101,7 +101,7 @@ When you first get into the `Play Mode` in Unity, you are in the `Surface Calibr
 ### Experimentation mode
 Assuming you are in `Experimentation mode`, you will first enter a tutorial phase. In the tutorial phase, you will see an example terrain model in the workspace and an example sketch on the left. You can press the `Grip` on the dominant hand to sketch. When you sketch, the example terrain model will disappear, which imitates the real `sketch mapping task`. In the `sketch mapping task`, participants need to externalize their cognitive map of terrain from memory, so the terrain model will disappear. Because it is the tutorial phase, so the terrain will appear again after you release the `Grip` button to end a stroke. There are some virtual buttons on the table. You can view the interface design images to see what these buttons do.
 
-After you feel confident about the interface, press the `Thumbstick` button to move to the next phase: The sketch mapping task.
+After you feel confident about the interface, press the `Thumbstick` button to move to the next phase: The sketch mapping task. Or the experimenter can also control the phase by press the `Q` on the keyboard.
 
 For a detailed tutorial, you can watch the instructions video.
 
