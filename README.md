@@ -71,11 +71,11 @@ Due to the use of the Mapbox SDK, the project could only run by Play Mode in Uni
 5. From the top menu of the Unity Editor, navigate to **Edit > Build Settings** to switch the Platform into Android.
 6. You are ready to play the project.
 ### Customize experiment and mode settings
-1. From the top menu of the Unity Editor, navigate to **Sketch2TerrainSetting > ExperimentSetting** to open the **Application Settings** in Inspector.
+1. From the top menu of the Unity Editor, navigate to **Sketch2TerrainSetting > ExperimentSetting** to open the `Application Settings` in Inspector.
 2. **🔴IMPORTANT🔴**: Under the **Mapbox > Mapbox Access Token** in Inspector, paste your [Mapbox access token](https://www.mapbox.com/install/unity/permission).
 3. Under the **Handness > Primary Hand** in Inspector, select Right Hand or Left Hand.
 4. Under the **Interface > Development Mode** in Inspector, select **Data Collection** for data collection mode, where researchers prepare training data for AI algorithms by tracing random terrain models; select **MaterialPreparation** for Material preparation mode, where researchers prepare example sketches for experiment; select **Experimentation** for Experimentation mode, where participants follow the experimental procedure to complete the experiment session.
-5. Under the **Interface > Experiment Condition** in Inspector, select **2D** for 2D Sketch Mapping, where participants can only sketch on a flat canvas in a 2D workspace; select **3D** for 3D Sketch Mapping, where participants can sketch 3D strokes in a 3D workspace; select **AI** for Generative 3D Sketch Mapping, where AI generates 3D terrain shapes based on sketches.
+5. Under the **Interface > Experiment Condition** in Inspector, select `2D` for 2D Sketch Mapping, where participants can only sketch on a flat canvas in a 2D workspace; select `3D` for 3D Sketch Mapping, where participants can sketch 3D strokes in a 3D workspace; select `AI` for Generative 3D Sketch Mapping, where AI generates 3D terrain shapes based on sketches.
 6. Under the **Interface > Participant ID** in Inspector, insert a number for the identator.
 
 ### Customize sketching system settings
@@ -83,7 +83,7 @@ You can try out different system settings by creating your own ScriptableObject:
 
 In your project (for example in Assets/Parameters) **right-click > Create > Parameters**. Customize the values.
 
-Change the parameters currently used in the Unity app: in the scene, find the **Manager** GameObject. Under the script **Parameters Manager** drag your new Parameters ScriptableObject under Current Parameters.
+Change the parameters currently used in the Unity app: in the scene, find the `Manager` GameObject. Under the script **Parameters Manager** drag your new Parameters ScriptableObject under Current Parameters.
 
 The default values are the ones we used in the paper and user study. A detailed description of each parameter (units and effect) is provided, hover over the name to display the description. You can always come back to default parameters by dragging the ScriptableObject Default Parameters to the Parameters GameObject.
 
@@ -91,7 +91,7 @@ The default values are the ones we used in the paper and user study. A detailed 
 
 ### Align the workspace to table
 
-When you first get into the **Play Mode** in Unity, you are in the **Surface Calibration** phase. Your dominant hand's controller is visualized as a stylus, while your non-dominant hand is visualized as a controller. You should first put the stylus on the left corner of a table and press the `X: Calibrate` button on the non-dominant controller. Then you repeat this process for the right corner of a table. After you calibrate the workspace, the UI will be loaded and you can start sketching. 
+When you first get into the `Play Mode` in Unity, you are in the `Surface Calibration` phase. Your dominant hand's controller is visualized as a stylus, while your non-dominant hand is visualized as a controller. You should first put the stylus on the left corner of a table and press the `X: Calibrate` button on the non-dominant controller. Then you repeat this process for the right corner of a table. After you calibrate the workspace, the UI will be loaded and you can start sketching. 
 
 After the first time calibrating the workspace, the location of the table is stored in the spatial anchor. You can directly load the workspace by pressing the `trigger` button on the non-dominant controller. 
 
