@@ -99,6 +99,8 @@ The default values are the ones we used in the paper and user study. A detailed 
 When you first get into the `Play Mode` in Unity, you are in the `Surface Calibration` phase. Your dominant hand's controller is visualized as a stylus, while your non-dominant hand is visualized as a controller. You should first put the stylus on the left corner of a table and press the `X: Calibrate` button on the non-dominant controller. Then you repeat this process for the right corner of a table. After you calibrate the workspace, the UI will be loaded and you can start sketching. 
 
 After the first time calibrating the workspace, the location of the table is stored in the spatial anchor. You can directly load the workspace by pressing the `trigger` button on the non-dominant controller. 
+### Interaction with the vitual button on the table
+As shown in the interface design, there are some virtual buttons on the table. The researcher can customize these buttons in Unity. To trigger the functions of the button, you can simply use the stylus to touch those buttons during `Play Mode` of Unity.
 
 ### Experimentation mode
 Assuming you are in `Experimentation mode`, you will first enter a tutorial phase. In the tutorial phase, you will see an example terrain model in the workspace and an example sketch on the left. You can press the `Grip` on the dominant hand to sketch. When you sketch, the example terrain model will disappear, which imitates the real `sketch mapping task`. In the `sketch mapping task`, participants need to externalize their cognitive map of terrain from memory, so the terrain model will disappear. Because it is the tutorial phase, so the terrain will appear again after you release the `Grip` button to end a stroke. There are some virtual buttons on the table. You can view the interface design images to see what these buttons do.
@@ -108,6 +110,9 @@ After you feel confident about the interface, press the `Thumbstick` button on t
 The observation phase will last 2 minutes and the drawing phase will last 5 minutes. The controller can not stop the observation phase. If you want to skip the observation phase, you should press the `E` button on the keyboard. The drawing phase can be skipped by pressing the `Thumbstick` button on the non-dominant controller.
 
 For a detailed tutorial, you can watch the instructions video.
+
+### Data collection mode
+In this mode, researchers can generate a random terrain model by pressing the "Next Terrain" button or revert to the previous terrain by pressing the "Previous Terrain" button on the table. After generating the terrain, researchers trace the main structure by drawing. Once the drawing is complete, the sketch and terrain information—including the height map, mesh model of the terrain, control points, and mesh model of the strokes, are saved as training data for the AI model by press the `SAVE` virtual button on the table. 
 
 ### Keyboard control
 The design of the interface applies a redundant control system. The experimenter can also control the interface by pressing the keyboard.
