@@ -1,6 +1,6 @@
 using UnityEngine;
 using Curve;
-using VRSketch;
+
 using System.Collections.Generic;
 using Mapbox.Unity.MeshGeneration.Data;
 using System.Linq;

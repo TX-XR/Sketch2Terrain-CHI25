@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-namespace VRSketch
+namespace MappingAI
 {
     // This is a simple wrapper around the segment class that enables storing an orientation as well
     // Useful to describe a cycle, and to reconstitute the curve loop for patch tessellation

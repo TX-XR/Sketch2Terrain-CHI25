@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace VRSketch
+namespace MappingAI
 {
     public interface ICycle
     {

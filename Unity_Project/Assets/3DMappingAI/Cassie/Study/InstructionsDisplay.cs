@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
-using VRSketch;
+
 using static UnityEngine.GraphicsBuffer;
 
 public class InstructionsDisplay : MonoBehaviour

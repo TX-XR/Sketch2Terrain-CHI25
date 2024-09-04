@@ -5,7 +5,7 @@ using System.IO;
 using Mapbox.Json;
 using System;
 
-namespace VRSketch
+namespace MappingAI
 {
 
     // WARNING: I think there is something wrong with serialization of Vector3 and Quaternions: ToString methods are not called, the serialization is simply something like {"x": value, "y": value, "z": value}.

@@ -8,7 +8,7 @@ using Stopwatch = System.Diagnostics.Stopwatch;
 using System.IO;
 using MathNet.Numerics.LinearAlgebra.Single;
 
-namespace VRSketch
+namespace MappingAI
 {
 
     public struct SolverParams

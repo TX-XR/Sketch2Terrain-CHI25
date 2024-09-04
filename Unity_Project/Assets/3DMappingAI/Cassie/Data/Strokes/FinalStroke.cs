@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEditor;
 using System.Collections.Generic;
 using Curve;
-using VRSketch;
+
 using MappingAI;
 
 /// <summary>

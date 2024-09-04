@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace VRSketch
+namespace MappingAI
 {
     [Serializable]
     public struct CurveNetworkData

@@ -1,35 +1,37 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using MathNet.Numerics.LinearAlgebra;
-using VRSketch;
 
-public class SelfIntersectionConstraint : IHardConstraint
+namespace MappingAI
 {
-    private int anchorIdxA;
-    private int anchorIdxB;
-    private Vector3 AB0;
-    private int N;
-
-    public SelfIntersectionConstraint(int anchorIdxA, int anchorIdxB, Vector3 AB0, int N)
+    public class SelfIntersectionConstraint : IHardConstraint
     {
-        this.anchorIdxA = anchorIdxA;
-        this.anchorIdxB = anchorIdxB;
-        this.AB0 = AB0;
-        this.N = N;
-    }
+        private int anchorIdxA;
+        private int anchorIdxB;
+        private Vector3 AB0;
+        private int N;
 
-    public (Matrix<float>, Vector<float>) GetBlocks()
-    {
-
-        Matrix<float> C = Matrix<float>.Build.Dense(3, 3 * N);
-        for (int i = 0; i < 3; i++)
+        public SelfIntersectionConstraint(int anchorIdxA, int anchorIdxB, Vector3 AB0, int N)
         {
-            C[i, 3 * 3 * this.anchorIdxA + i] = 1f;
-            C[i, 3 * 3 * this.anchorIdxB + i] = -1f;
+            this.anchorIdxA = anchorIdxA;
+            this.anchorIdxB = anchorIdxB;
+            this.AB0 = AB0;
+            this.N = N;
         }
 
-        Vector<float> b = Vector<float>.Build.DenseOfArray(VRSketch.Utils.Flatten(this.AB0));
+        public (Matrix<float>, Vector<float>) GetBlocks()
+        {
 
-        return (C, b);
+            Matrix<float> C = Matrix<float>.Build.Dense(3, 3 * N);
+            for (int i = 0; i < 3; i++)
+            {
+                C[i, 3 * 3 * this.anchorIdxA + i] = 1f;
+                C[i, 3 * 3 * this.anchorIdxB + i] = -1f;
+            }
+
+            Vector<float> b = Vector<float>.Build.DenseOfArray(Utils.Flatten(this.AB0));
+
+            return (C, b);
+        }
     }
 }

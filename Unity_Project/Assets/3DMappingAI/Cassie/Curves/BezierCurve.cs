@@ -2,9 +2,8 @@
 using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
-using VRSketch;
 using System;
-
+using MappingAI;
 namespace Curve
 {
 
@@ -626,46 +625,6 @@ namespace Curve
             points = points.Append(beziers[beziers.Length - 1].Get(3));
 
             return points.ToList();
-        }
-
-        public static BezierCurve Mirror(BezierCurve inputCurve, VRSketch.Plane mirrorPlane, out float score)
-        {
-            List<Vector3> inputPts = inputCurve.GetControlPoints();
-            Vector3[] ctrlPts = new Vector3[inputPts.Count];
-
-            Vector3 avgDisplacement = Vector3.zero;
-            score = 0f;
-
-            for (int i = 0; i < ctrlPts.Length; i++)
-            {
-                ctrlPts[i] = mirrorPlane.Mirror(inputPts[i]);
-                //avgDisplacement += ctrlPts[i] - inputPts[i];
-                score += Mathf.Abs(Vector3.Dot(mirrorPlane.n, ctrlPts[i] - inputPts[i])) * 0.5f; // Distance between point and mirror
-            }
-
-            if (ctrlPts.Length > 0)
-                score /= ctrlPts.Length;
-
-            //score = Mathf.Abs(Vector3.Dot(mirrorPlane.n, avgDisplacement));
-
-            return new BezierCurve(ctrlPts);
-        }
-
-        public static BezierCurve ProjectOnPlane(BezierCurve inputCurve, VRSketch.Plane plane, out float score)
-        {
-            List<Vector3> inputPts = inputCurve.GetControlPoints();
-            Vector3[] ctrlPts = new Vector3[inputPts.Count];
-            score = 0f;
-
-            for (int i = 0; i < ctrlPts.Length; i++)
-            {
-                ctrlPts[i] = plane.Project(inputPts[i]);
-                score = Mathf.Max(score, Mathf.Abs(Vector3.Dot(plane.n, ctrlPts[i] - inputPts[i])));
-            }
-            //if (ctrlPts.Length > 0)
-            //    score /= (float)ctrlPts.Length;
-
-            return new BezierCurve(ctrlPts);
         }
 
         // Static methods used to fit a curve to a bunch of points

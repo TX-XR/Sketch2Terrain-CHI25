@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using VRSketch;
+
 /*
     This code was adapted from https://gitlab.inria.fr/D3/cassie and kept only what was necessary for this project
     Check out their original repository for better explanations of the parameters.

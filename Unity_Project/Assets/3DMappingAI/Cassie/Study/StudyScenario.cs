@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.Events;
-using VRSketch;
+
 
 
 public class StudyScenario : MonoBehaviour
@@ -13,8 +13,6 @@ public class StudyScenario : MonoBehaviour
     private StudyStep CurrentStep { get; set; }
 
     private static UnityEvent setStudyStepEvent;
-
-    //public static SetStudyStepEvent setStudyStep;
 
     private StudySequenceData sequenceData;
     private int stepID;

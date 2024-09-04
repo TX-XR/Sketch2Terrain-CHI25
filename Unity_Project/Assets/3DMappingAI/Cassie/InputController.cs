@@ -3,7 +3,6 @@ using System.Collections;
 using UnityEngine;
 using Unity.Profiling;
 using UnityEditor;
-using VRSketch;
 using System;
 using Mapbox.Unity.MeshGeneration.Data;
 using Unity.Mathematics;
@@ -23,8 +22,17 @@ namespace MappingAI
         Erase,
         None
     }
+
     public class InputController : MonoBehaviour
     {
+        private enum Action
+        {
+            Draw,
+            Grab,
+            Zoom,
+            Idle,
+            Erase
+        }
         // SETTINGS
         [Header("Settings")]
         public bool HapticOnCollision = false;
@@ -50,21 +58,6 @@ namespace MappingAI
         private GameObject primaryHandTip;
         [SerializeField]
         private GameObject SecondaryHandTip;
-        // INPUTS
-        //[Header("SteamVR Actions")]
-        //public SteamVR_Action_Single drawAction;
-        //public SteamVR_Action_Boolean addPatchAction;
-        //public SteamVR_Action_Boolean eraseAction;
-        //public SteamVR_Action_Boolean grabAction;
-        //public SteamVR_Action_Boolean zoomAction;
-        //public SteamVR_Action_Boolean toggleGridStateAction;
-        //public SteamVR_Action_Boolean toggleMirror;
-        //public SteamVR_Action_Boolean switchSystemAction;
-
-
-        //public SteamVR_Action_Pose pose;
-        //public SteamVR_Input_Sources primarySource = SteamVR_Input_Sources.RightHand;
-        //public SteamVR_Input_Sources secondarySource = SteamVR_Input_Sources.LeftHand;
 
         // ACTION CONTROLLERS
         private DrawController drawController;
@@ -86,7 +79,6 @@ namespace MappingAI
         private StudyScenario scenario;
         public float IdleRecordFrequency = 2f;
         public InstructionsDisplay instructionsDisplay;
-        public ControllerType controllerType = ControllerType.Oculus;
         public bool ShowInstructions = true;
         private bool InObservationMode = false;
         private EraserTool eraserTool;
@@ -102,7 +94,7 @@ namespace MappingAI
         private float lastRecordedIdle = 0f;
 
         // Study task settings
-        private VRSketch.InteractionMode mode;
+        private InteractionMode mode;
         private SketchSystem sketchSystem = SketchSystem.Snap;
 
 
@@ -117,7 +109,7 @@ namespace MappingAI
         private float lastContinueInputTime;
         float tileSize = -1f;
         float strokeOffsetTimesFromBottomPlane = 0.5f;
-        static ProfilerMarker s_InputLoopMarker = new ProfilerMarker("VRSketch.TreatInput");
+        static ProfilerMarker s_InputLoopMarker = new ProfilerMarker("TreatInput");
 
         [SerializeField]
         private UndominantTrigger undominantTrigger = UndominantTrigger.Erase; // decide whether the Trigger button on Undominant hand is move or erase
@@ -125,15 +117,6 @@ namespace MappingAI
         private UndominantGrip undominantGrip = UndominantGrip.DisableAI; // decide whether the Grip button on Undominant hand is zoom or change color
         public bool ShowGrid = false; // decide whether the Grip button on Undominant hand is zoom or change color
         public bool Commit2Dand3DStrokes = false; // decide whether the Grip button on Undominant hand is zoom or change color
-
-        private enum Action
-        {
-            Draw,
-            Grab,
-            Zoom,
-            Idle,
-            Erase
-        }
 
         private void OnEnable()
         {
@@ -181,14 +164,13 @@ namespace MappingAI
             exportController = ComponentManager.Instance.GetExportController();
             aIModelManager = ComponentManager.Instance.GetAIModelManager();
             grid = ComponentManager.Instance.GetGrid3D();
-            controllerType = StudyUtils.GetControllerType();
             mode = scenario.GetCurrentStep().Mode;
             StudyScenario.GetStudyStepEvent().AddListener(OnStepChange);
             if (eraserTool == null)
                 eraserTool = ComponentManager.Instance.GetEraserTool();
         }
 
-        public VRSketch.InteractionMode GetMode()
+        public InteractionMode GetMode()
         {
             return this.mode;
         }
@@ -245,7 +227,6 @@ namespace MappingAI
             Application.Quit();
 #endif
             }
-            // OculusInputManager.studyNextAction() 
             // in the normal mode, if the count Down finished, go to the next study directly
 
             if (SwitchToNextStudy() || (NormalMode() && instructionsDisplay.CountDownFinished()))
@@ -259,11 +240,6 @@ namespace MappingAI
             {
                 exportController.ExportSketch();
             }
-            //if (Input.GetKeyUp(saveStudyLogKey))
-            //{
-            //    Debug.Log("saving system state");
-            //    SaveMidStepAndContinue();
-            //}
         }
 
         private void HandleGrab(Vector3 primaryHandPos, Vector3 secondaryHandPos, quaternion secondaryHandRot)
@@ -565,7 +541,7 @@ namespace MappingAI
         {
             if (ApplicationSettings.Instance.DevelopmentMode == DevelopmentMode.Experimentation)
             {
-                bool flag = this.mode == VRSketch.InteractionMode.Tutorial;
+                bool flag = this.mode == InteractionMode.Tutorial;
                 return flag;
             }
             return false;
@@ -574,7 +550,7 @@ namespace MappingAI
         {
             if (ApplicationSettings.Instance.DevelopmentMode == DevelopmentMode.Experimentation)
             {
-                bool flag = this.mode == VRSketch.InteractionMode.FreeCreation;
+                bool flag = this.mode == InteractionMode.FreeCreation;
                 return flag;
             }
             return false;
@@ -621,9 +597,7 @@ namespace MappingAI
                 aIModelManager.CanAIModelRender(true);
                 aIModelManager.ExecuteInferenceAsync();
             }
-
         }
-
         public void ChangeHandAppearance()
         {
             //MaterialManager.Instance.ChangeMaterial();
@@ -717,49 +691,35 @@ namespace MappingAI
             // Start Countdown
             instructionsDisplay.SetCountdown(scenario.GetCurrentStep().TimeLimit);
 
-            OnModeChange(VRSketch.InteractionMode.Normal);
+            OnModeChange(InteractionMode.Normal);
             UpdateInstructions();
         }
 
         private void BeginObservationStudy()
         {
-            if (this.mode.Equals(VRSketch.InteractionMode.Observation))
+            if (this.mode.Equals(InteractionMode.Observation))
             {
                 // Start Countdown
-                //instructionsDisplay.SetCountdown(scenario.GetCurrentStep().TimeLimitForObservation);
                 if (ApplicationSettings.Instance.DevelopmentMode == DevelopmentMode.Experimentation)
                 {
                     instructionsDisplay.SetCountdown(scenario.GetCurrentStep().TimeLimitForObservation);
+                }
 
-                    //instructionsDisplay.SetCountdown(10);
-                }
-                else if (ApplicationSettings.Instance.DevelopmentMode == DevelopmentMode.MaterialPreparation) //prepare materials
-                {
-                    //instructionsDisplay.SetCountdown(1);
-                }
                 UpdateInstructions();
             }
         }
 
         public bool FreeCreationMode()
         {
-            return this.mode.Equals(VRSketch.InteractionMode.FreeCreation);
+            return this.mode.Equals(InteractionMode.FreeCreation);
         }
 
         // Break mode
         IEnumerator BreakTime()
-        {
-            //instructionsDisplay.SetText(
-            //    "Break time\n" +
-            //    "Take a break for as long as you like \n" +
-            //    //"Press " + studyNextKey + " or Thumbstick Button for non-dominant hand" + " to start the next task.",
-            //    "Press Thumbstick Button on " + StudyUtils.undominatehand + " controller to start the next task.",
-            //    modalMode: false
-            //    );            
+        {       
             instructionsDisplay.SetText(
                 "Break time\n" +
                 "Take a break for as long as you like \n" +
-                //"Press " + studyNextKey + " or Thumbstick Button for non-dominant hand" + " to start the next task.",
                 "Inform the experimenter to start the next task.",
                 modalMode: false
                 );
@@ -789,22 +749,14 @@ namespace MappingAI
                 isInBreakMode = true;
                 StartCoroutine("FinishStudy");
             }
-            //StartCoroutine("WaitForConfirmBreakEnd");
         }
 
 
         // Confirm dialog
         IEnumerator WaitForConfirm()
         {
-            //instructionsDisplay.SetText(
-            //"You are about to end the task.\n" +
-            ////"Press " + studyNextKey + " or Thumbstick Button for non-dominant hand"+ " to confirm, \n or the " + backToTheTaskKey + " or Trigger button for non-dominant hand" + " to go back to the task.",
-            //"Press Thumbstick Button on " + StudyUtils.undominatehand + " controller to confirm, \n or the Trigger Button Button on " + StudyUtils.undominatehand + " controller to go back to the task.",
-            //modalMode: false
-            //);
             instructionsDisplay.SetText(
                 "You are about to end the task.\n" +
-                //"Press " + studyNextKey + " or Thumbstick Button for non-dominant hand"+ " to confirm, \n or the " + backToTheTaskKey + " or Trigger button for non-dominant hand" + " to go back to the task.",
                 "inform the experimenter to confirm, or go back to the task.",
                 modalMode: false
 );
@@ -915,12 +867,12 @@ namespace MappingAI
 
         private bool ObservationMode()
         {
-            return this.mode == VRSketch.InteractionMode.Observation;
+            return this.mode == InteractionMode.Observation;
         }
 
         private bool NormalMode()
         {
-            return this.mode == VRSketch.InteractionMode.Normal;
+            return this.mode == InteractionMode.Normal;
         }
 
         private void OnSystemChange(SketchSystem newSystem, bool clearCanvas = true)
@@ -964,7 +916,7 @@ namespace MappingAI
                 drawController.SwitchSystem(surfacing);
         }
 
-        private void OnModeChange(VRSketch.InteractionMode mode)
+        private void OnModeChange(InteractionMode mode)
         {
 
             this.mode = mode;
@@ -983,9 +935,6 @@ namespace MappingAI
             if(FreeCreationMode())
             {
                 instructions += terrainManager.SetInstuction(terrainManager.GetIndex(), Math.Round(terrainManager.GetCurrent_Lat_lon().x, 8), Math.Round(terrainManager.GetCurrent_Lat_lon().y, 8));
-                //instructions += terrainManager.SetInstuction(scenario.GetCurrentStep().TerrainName, terrainManager.indexForGivenTerrain, Math.Round(terrainManager.Current_Lat_lon.x, 8), Math.Round(terrainManager.Current_Lat_lon.y, 8));
-                //instructions += terrainManager.SetInstuction(terrainManager.indexForGivenTerrain, Math.Round(terrainManager.Current_Lat_lon.x, 8), Math.Round(terrainManager.Current_Lat_lon.y, 8));
-
             }
             else
             {

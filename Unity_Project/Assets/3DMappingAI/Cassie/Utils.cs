@@ -1,11 +1,8 @@
 ﻿using UnityEngine;
 using MathNet.Numerics.LinearAlgebra;
-using System.Collections.Generic;
-using System;
 
-namespace VRSketch
+namespace MappingAI
 {
-
     public static class FewColors
     {
         private static Color[] _colors = new Color[]
@@ -46,23 +43,6 @@ namespace VRSketch
         public float Distance(Vector3 p)
         {
             return Mathf.Abs(Vector3.Dot(p - p0, n));
-        }
-
-        public Vector3 Project(Vector3 p)
-        {
-            return p - Vector3.Dot(n, p - p0) * n;
-        }
-
-        public Vector3 Mirror(Vector3 p)
-        {
-            float a = Vector3.Dot(n, p - p0);
-            //Vector3 dir = a * n;
-            return p - 2f * a * n;
-        }
-
-        public Vector3 MirrorDir(Vector3 v)
-        {
-            return -Vector3.Reflect(v, n);
         }
 
         public void SnapToOrtho(Vector3[] orthoDirections, float threshold)
@@ -263,10 +243,5 @@ namespace VRSketch
         {
             return p0 + Vector3.Dot(P - p0, dir) * dir;
         }
-
-
-
-
     }
-
 }

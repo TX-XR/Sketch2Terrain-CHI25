@@ -299,7 +299,7 @@ public class TerrainManagerAsync : MonoBehaviour
     }
     public async void NextTerrain(float zoom)
     {
-        if (inputController.GetMode() == VRSketch.InteractionMode.Tutorial)
+        if (inputController.GetMode() == InteractionMode.Tutorial)
         {
             WorkspaceManager.Instance.EnableUpperBody(false);
             WorkspaceManager.Instance.EnableLowerBody(true);
@@ -316,7 +316,7 @@ public class TerrainManagerAsync : MonoBehaviour
             return;
         }
         // if in Tutotial interaction mode, then show an consist tutorial terrain
-        if (inputController.GetMode() != VRSketch.InteractionMode.FreeCreation)
+        if (inputController.GetMode() != InteractionMode.FreeCreation)
         {
             return;
         }
@@ -443,7 +443,7 @@ public class TerrainManagerAsync : MonoBehaviour
     public async void PrevioustTerrain()
     {
         // if in Tutotial interaction mode, then show an consist tutorial terrain
-        if (inputController.GetMode() != VRSketch.InteractionMode.FreeCreation)
+        if (inputController.GetMode() != InteractionMode.FreeCreation)
         {
             return;
         }

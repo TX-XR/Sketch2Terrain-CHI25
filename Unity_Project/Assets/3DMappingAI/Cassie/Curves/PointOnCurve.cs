@@ -16,12 +16,5 @@ namespace Curve
         {
             this.t = t; Position = pos; Tangent = tan; LocalNormal = nor;
         }
-
-        public PointOnCurve Mirror(VRSketch.Plane mirrorPlane)
-        {
-            PointOnCurve mirrorPoint = new PointOnCurve(t, mirrorPlane.Mirror(Position), mirrorPlane.MirrorDir(Tangent), mirrorPlane.MirrorDir(LocalNormal));
-            return mirrorPoint;
-        }
-
     }
 }

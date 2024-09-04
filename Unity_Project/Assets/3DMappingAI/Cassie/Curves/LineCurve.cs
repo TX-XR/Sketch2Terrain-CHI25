@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using VRSketch;
 using System;
-
+using MappingAI;
 namespace Curve
 {
     public class LineCurve : Curve
@@ -46,7 +45,7 @@ namespace Curve
             }
             else
             {
-                proj = VRSketch.Utils.ProjectOnLine(A, direction, point);
+                proj = Utils.ProjectOnLine(A, direction, point);
                 //Debug.Log("projection between A and B");
             }
 
@@ -233,7 +232,7 @@ namespace Curve
                 {
                     //Debug.Log("potential intersection at " + constraint.Position.ToString("F3"));
                     //Debug.Log("distance: " + Vector3.Distance(constraint.Position, Utils.ProjectOnLine(A, direction, constraint.Position)));
-                    if (Vector3.Distance(constraint.Position, VRSketch.Utils.ProjectOnLine(A, direction, constraint.Position)) < proximity_threshold * 0.1f)
+                    if (Vector3.Distance(constraint.Position, Utils.ProjectOnLine(A, direction, constraint.Position)) < proximity_threshold * 0.1f)
                     {
                         //Debug.Log("accept intersection");
                         IntersectionConstraint intersection = (IntersectionConstraint)constraint;
@@ -243,7 +242,7 @@ namespace Curve
                 }
                 if (constraint as MirrorPlaneConstraint != null)
                 {
-                    if (Vector3.Distance(constraint.Position, VRSketch.Utils.ProjectOnLine(A, direction, constraint.Position)) < proximity_threshold * 0.1f)
+                    if (Vector3.Distance(constraint.Position, Utils.ProjectOnLine(A, direction, constraint.Position)) < proximity_threshold * 0.1f)
                     {
                         //Debug.Log("accept intersection");
                         MirrorPlaneConstraint intersection = (MirrorPlaneConstraint)constraint;
@@ -254,28 +253,6 @@ namespace Curve
             }
             return (intersections.ToArray(), mirrorPlaneConstraints.ToArray());
         }
-
-        public static LineCurve ProjectOnPlane(LineCurve inputCurve, VRSketch.Plane plane, out float score)
-        {
-            Vector3 A = plane.Project(inputCurve.A);
-            Vector3 B = plane.Project(inputCurve.B);
-            // Mean distance between points and mirror
-            score = 0.5f * (Mathf.Abs(Vector3.Dot(plane.n, (A - inputCurve.A))) * 0.5f + Math.Abs(Vector3.Dot(plane.n, B - inputCurve.B)) * 0.5f);
-
-            return new LineCurve(A, B, inputCurve.weights[0], inputCurve.weights[1]);
-        }
-
-
-        public static LineCurve Mirror(LineCurve inputCurve, VRSketch.Plane mirrorPlane, out float score)
-        {
-            Vector3 A = mirrorPlane.Mirror(inputCurve.A);
-            Vector3 B = mirrorPlane.Mirror(inputCurve.B);
-
-            score = (Mathf.Abs(Vector3.Dot(mirrorPlane.n, (A - inputCurve.A))) + Mathf.Abs(Vector3.Dot(mirrorPlane.n, B - inputCurve.B))) * 0.5f;
-
-            return new LineCurve(A, B, inputCurve.weights[0], inputCurve.weights[1]);
-        }
-
 
         private (bool, bool) ConstrainTo(Constraint constraintA, Constraint constraintB, Vector3[] OrthoDirections, float angular_proximity_threshold, float proximity_threshold)
         {
@@ -313,7 +290,7 @@ namespace Curve
             else
             {
                 // Project A on line (P1 B)
-                A = VRSketch.Utils.ProjectOnLine(P1, Vector3.Normalize(B - P1), A);
+                A = Utils.ProjectOnLine(P1, Vector3.Normalize(B - P1), A);
             }
 
             if ((Vector3.Dot(P2 - B, direction) > 0) || (Vector3.Distance(P2, B) < endpointSnapThreshold))
@@ -323,7 +300,7 @@ namespace Curve
             else
             {
                 // Project B on line (A P2)
-                B = VRSketch.Utils.ProjectOnLine(A, Vector3.Normalize(P2 - A), B);
+                B = Utils.ProjectOnLine(A, Vector3.Normalize(P2 - A), B);
             }
 
             return (true, true);

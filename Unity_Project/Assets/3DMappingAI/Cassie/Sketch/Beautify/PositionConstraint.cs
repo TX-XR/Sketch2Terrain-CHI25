@@ -1,31 +1,34 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using MathNet.Numerics.LinearAlgebra;
-using VRSketch;
-public class PositionConstraint : IHardConstraint
+
+namespace MappingAI
 {
-    private int ctrlPtIdx;
-    private Vector3 d;
-    private int N;
-
-    public PositionConstraint(int ctrlPtIdx, Vector3 d, int N)
+    public class PositionConstraint : IHardConstraint
     {
-        this.ctrlPtIdx = ctrlPtIdx;
-        this.d = d;
-        this.N = N;
-    }
+        private int ctrlPtIdx;
+        private Vector3 d;
+        private int N;
 
-    public (Matrix<float>, Vector<float>) GetBlocks()
-    {
-
-        Matrix<float> C = Matrix<float>.Build.Dense(3, 3 * N);
-        for (int i = 0; i < 3; i++)
+        public PositionConstraint(int ctrlPtIdx, Vector3 d, int N)
         {
-            C[i, 3 * this.ctrlPtIdx + i] = 1f;
+            this.ctrlPtIdx = ctrlPtIdx;
+            this.d = d;
+            this.N = N;
         }
 
-        Vector<float> b = Vector<float>.Build.DenseOfArray(VRSketch.Utils.Flatten(this.d));
+        public (Matrix<float>, Vector<float>) GetBlocks()
+        {
 
-        return (C, b);
+            Matrix<float> C = Matrix<float>.Build.Dense(3, 3 * N);
+            for (int i = 0; i < 3; i++)
+            {
+                C[i, 3 * this.ctrlPtIdx + i] = 1f;
+            }
+
+            Vector<float> b = Vector<float>.Build.DenseOfArray(Utils.Flatten(this.d));
+
+            return (C, b);
+        }
     }
 }
