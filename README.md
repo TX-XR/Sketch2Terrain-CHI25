@@ -1,4 +1,4 @@
-<h1 align="center">Sketch2Terrain: AI-Driven Real-Time Universal-Style Terrain Sketch Mapping in AR</h1>
+<h1 align="center">Sketch2Terrain: AI-Driven Real-Time Terrain Sketch Mapping in AR</h1>
 
 <!-- Sketch2Terrain empowers non-experts to create concise and unambiguous sketch maps of natural environments. The system also serves as a comprehensive tool for researchers, providing a unified interface that supports the entire research workflow, including data collection, material preparation, and experimentation. -->
 
