@@ -41,7 +41,7 @@ Experimental procedure: The experiment for 2D and 3D conditions was composed of 
 ### Example sketches produced by participants in 2D, 3D and AI conditions for eight scenes.
 [View the Example Sketches Plot](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Example_sketches_plot_1.html)
 
-{ % include_relative blob/main/images/Example_sketches_plot_2.html % } 
+{ % include_relative Sketch2Terrain/blob/main/images/Example_sketches_plot_2.html % } 
 <h1 align="center">Results</h1>
 
 ![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Statistics_results.png?raw=true "Statistics_results.")
