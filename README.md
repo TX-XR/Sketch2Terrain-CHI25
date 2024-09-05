@@ -62,17 +62,17 @@ In Q1 to Q3 and Q8 to Q17, they rated seven Likert-scale items from 1 (strongly 
 
 <h1 align="center">Installation</h1>
 
-Due to the use of the [Mapbox](https://www.mapbox.com/unity), the project could only run by `Play Mode` in Unity and then stream in the Meta Quest series of headsets. 
+Due to the use of the [Mapbox](https://www.mapbox.com/unity), the project could only run by `Play Mode` in Unity and then stream in the Meta Quest series of headsets. The application has been tested on Unity `2022.2.19f1` but has not been tested on others.
 
 **🔴IMPORTANT🔴** We highly recommend using the [Meta Quest Link cable](https://www.meta.com/ch/en/quest/accessories/link-cable/) to reduce the latency of the streaming. 
 
 ### Steps for setting up
 1. Follow [Meta Developer Instructions](https://developer.oculus.com/documentation/unity/unity-before-you-begin/) to set up Unity for XR development and import Meta XR packages.
-2. The application has been tested on Unity `2022.2.19f1` but has not been tested on others.
-3. Clone this repository or download the source code from GitHub.
-4. Open the Unity Project with Unity `2022.2.19f1`. Find the correct scene in **Assets > 3DMappingAI > Scenes > Sketch2Terrain_demo_scene** and double-click it.
+3. Clone this repository.
+4. Open the Unity Project with Unity version `2022.2.19f1`. Find the correct scene in **Assets > 3DMappingAI > Scenes > Sketch2Terrain_demo_scene** and double-click it.
 5. From the top menu of the Unity Editor, navigate to **Edit > Build Settings** to switch the Platform into Android.
 6. You are ready to play the project.
+
 ### Customize experiment and mode settings
 1. From the top menu of the Unity Editor, navigate to **Sketch2TerrainSetting > ExperimentSetting** to open the `Application Settings` in Inspector.
 2. **🔴IMPORTANT🔴**: Under the **Mapbox > Mapbox Access Token** in Inspector, paste your [Mapbox access token](https://www.mapbox.com/install/unity/permission).
@@ -120,11 +120,11 @@ The material preparation mode allows researchers to create experimental material
 
 ### Keyboard control
 The design of the interface applies a redundant control system. The experimenter can also control the interface by pressing the keyboard.
-- `X`:Export the sketch
-- `Q`:Change to the next phase/scene (after pressing the `Q` button, the system will ask for confirmation, you can press `Q` again for confirmation or `W` to go back)
-- `W`:Back to the current study
-- `E`:Skip the Observation phase in the sketch mapping task.
-- `L`:Load the workspace from spatial anchor.
+- `X`: Export the sketch
+- `Q`: Change to the next phase/scene (after pressing the `Q` button, the system will ask for confirmation, you can press `Q` again for confirmation or `W` to go back)
+- `W`: Back to the current study
+- `E`: Skip the Observation phase in the sketch mapping task.
+- `L`: Load the workspace from spatial anchor.
 
 ### Saving the sketches
 All exported files will be available in the **Assets > SketchData~** folder if playing from the editor.
