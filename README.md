@@ -31,8 +31,8 @@ We recruited 36 participants (17 females, 19 males), aged between 18 and 41 year
 ![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Experiment_Design.png?raw=true "Experimental design.")
 Experimental procedure: The experiment for 2D and 3D conditions was composed of tutorial and sketch mapping phases followed by the survey, while the AI condition had a voluntarily free creation phase (which is not shown in the picture). A different sketching interface was provided for each condition, as shown.
 
-### Sample sketches produced by participants in 2D, 3D and AI conditions for eight scenes.
-![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Example_Sketch.png?raw=true "Example Sketch.")
+<!-- ### Sample sketches produced by participants in 2D, 3D and AI conditions for eight scenes.
+![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Example_Sketch.png?raw=true "Example Sketch.") -->
 
 <h1 align="center">Results</h1>
 
@@ -62,7 +62,7 @@ In Q1 to Q3 and Q8 to Q17, they rated seven Likert-scale items from 1 (strongly 
 
 <h1 align="center">Installation</h1>
 
-Due to the use of the [Mapbox](https://www.mapbox.com/unity), the project could only run by `Play Mode` in Unity and then stream in the Meta Quest series of headsets. The application has been tested on Unity `2022.2.19f1` but has not been tested on others.
+Due to the use of the [Mapbox](https://www.mapbox.com/unity), the project could only run by `Play Mode` in Unity and then stream in the Meta Quest series of headsets. The application has been tested on Unity version `2022.2.19f1` but has not been tested on others.
 
 **🔴IMPORTANT🔴** We highly recommend using the [Meta Quest Link cable](https://www.meta.com/ch/en/quest/accessories/link-cable/) to reduce the latency of the streaming. 
 
@@ -76,8 +76,8 @@ Due to the use of the [Mapbox](https://www.mapbox.com/unity), the project could 
 ### Customize experiment and mode settings
 1. From the top menu of the Unity Editor, navigate to **Sketch2TerrainSetting > ExperimentSetting** to open the `Application Settings` in Inspector.
 2. **🔴IMPORTANT🔴**: Under the **Mapbox > Mapbox Access Token** in Inspector, paste your [Mapbox access token](https://www.mapbox.com/install/unity/permission).
-3. Under the **Handness > Primary Hand** in Inspector, select Right Hand or Left Hand.
-4. Under the **Interface > Development Mode** in Inspector, select **DataCollection** for data collection mode, where researchers prepare training data for AI algorithms by tracing random terrain models; select **MaterialPreparation** for Material preparation mode, where researchers prepare example sketches for experiment; select **Experimentation** for Experimentation mode, where participants follow the experimental procedure to complete the experiment session.
+3. Under the **Handness > Primary Hand** in Inspector, select `Right Hand` or `Left Hand`.
+4. Under the **Interface > Development Mode** in Inspector, select **DataCollection** for `data collection mode`, where researchers prepare training data for AI algorithms by tracing random terrain models; select **MaterialPreparation** for `Material preparation mode`, where researchers prepare example sketches for experiment; select **Experimentation** for `Experimentation mode`, where participants follow the experimental procedure to complete the experiment session.
 5. Under the **Interface > Experiment Condition** in Inspector, select `2D` for 2D Sketch Mapping, where participants can only sketch on a flat canvas in a 2D workspace; select `3D` for 3D Sketch Mapping, where participants can sketch 3D strokes in a 3D workspace; select `AI` for Generative 3D Sketch Mapping, where AI generates 3D terrain shapes based on sketches.
 6. Under the **Interface > Participant ID** in Inspector, insert a number for the identator.
 
