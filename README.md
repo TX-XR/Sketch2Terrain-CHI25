@@ -17,6 +17,10 @@ Sketch mapping is an established research tool to study human spatial decision-m
 ![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Workflow.png?raw=true "The workflow.")
 The typical workflow for creating a 3D terrain with Sketch2Terrain is illustrated in the sequence. User-sketched strokes are highlighted in blue. The system automatically generates a well-connected curve network to facilitate terrain creation. As more strokes are added (progressing from (a) to (f)), the generated terrain becomes increasingly accurate. The second row from (g) to (l) shows the height map of the corresponding terrain model (altitude as color gradient). -->
 
+
+
+
+
 ### Sketch2Terrain utilizes the widely recognized pix2pix model to facilitate the transformation between sketches and height map of terrain.
 ![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Architecture.png?raw=true "The detail of the pipeline of the Pix2pix model.")
 (a) The architecture of the AI model. (b) Performance versus model size and inference time. (c) Comparison between the inference results for the Pix2Pix and diffusion-based models.
@@ -34,6 +38,9 @@ Experimental procedure: The experiment for 2D and 3D conditions was composed of 
 <!-- ### Sample sketches produced by participants in 2D, 3D and AI conditions for eight scenes.
 ![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Example_Sketch.png?raw=true "Example Sketch.") -->
 
+### Example sketches produced by participants in 2D, 3D and AI conditions for eight scenes.
+{ % include_relative https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Example_sketches_plot_1.html % } 
+{ % include_relative https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Example_sketches_plot_2.html % } 
 <h1 align="center">Results</h1>
 
 ![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Statistics_results.png?raw=true "Statistics_results.")
