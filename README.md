@@ -43,6 +43,8 @@ Experimental procedure: The experiment for 2D and 3D conditions was composed of 
 
 
 <h1 align="center">Results</h1>
+![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Comparison_between_conditions.png?raw=true "Comparison_between_conditions.")
+Relative comparison between (a) 3D and AI conditions in terms of 3D metrics; (b) 2D, 3D, and AI conditions in terms of 2D metrics, user experience and task load.
 <!-- 
 ![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Statistics_results.png?raw=true "Statistics_results.")
 Bar plots of  (a) Terrain accuracy analysis measured by Intersection over Union (IoU) and Terrain Topology Score (TTS). (b) Landmark accuracy analysis measured by Landmark Topology Score (LTS) and Landmark Position Score (LPS). (c) Stroke number analysis. (d) Post-study questionnaire analysis. (e) User experience and task load analysis measured by SIM Task Load Index (SIM-TLX), the System Usability Scale (SUS), and the User Experience Questionnaire (UEQ).
