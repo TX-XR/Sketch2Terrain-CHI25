@@ -165,5 +165,3 @@ To sum up:
 
 ### License
 The code in this repository except for the external dependencies is provided under the MIT License. The external dependencies are provided under their respective licenses.
-
-<iframe src="main.html" width="100%" height="600"></iframe>

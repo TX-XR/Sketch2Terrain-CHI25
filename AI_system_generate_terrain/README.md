@@ -1,1 +1,0 @@
-<iframe src="main.html" width="100%" height="600"></iframe>
