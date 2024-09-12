@@ -15,9 +15,7 @@ The training dataset could be download from:
 
 🚨: And it should be placed within the <dataroot> directory.
 
-### 3. Project Structure:
-
-Structure of this repository:
+### 3. Dataset Structure:
 
 ```
 |
@@ -32,7 +30,7 @@ Structure of this repository:
 
 ### 1. Train models [Pix2pix](https://arxiv.org/pdf/1611.07004) 
 
-64 model: 
+64 model:
 ```
 python train.py --dataroot <dataroot> --name 64_unet_model --model pix2pix --ngf 64 --no_flip
 ```
