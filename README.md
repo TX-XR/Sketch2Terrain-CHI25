@@ -51,7 +51,7 @@ Relative comparison between (a) 3D and AI conditions in terms of 3D metrics; (b)
 
 <h1 align="center">Application Scenarios</h1>
 
-![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Use cases.png?raw=true "Use cases.")
+![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Usecases.png?raw=true "Use cases.")
 
 Example application scenarios where generative-3D-sketch-maps can support (a) \textit{geospatial constraints}: a field search team member relays the victim's location to the commander, who plans the helicopter route and communicates it back to the team., (b) \textit{temporal constraints}: an accident investigator reconstruct the accident scene, (c) \textit{temporal constraints}: police reconstruct the burial site from eyewitness testimonies and discuss the case with each other, (d) \textit{imaginative or emotional representations}: a man externalizes the paradise in his dream.
 <!-- 
