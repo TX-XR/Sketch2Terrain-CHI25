@@ -4,6 +4,13 @@ from data import create_dataset
 from models import create_model
 from util.visualizer import Visualizer
 
+'''
+64 model: python train.py --dataroot /mnt/e/AI_project/3D/pytorch-CycleGAN-and-pix2pix/paper_dataset --name 64_unet_model --model pix2pix --ngf 64 --no_flip
+32 model: python train.py --dataroot /mnt/e/AI_project/3D/pytorch-CycleGAN-and-pix2pix/paper_dataset --name 32_unet_model --model pix2pix --ngf 32 --no_flip
+16 model: python train.py --dataroot /mnt/e/AI_project/3D/pytorch-CycleGAN-and-pix2pix/paper_dataset --name 16_unet_model --model pix2pix --ngf 16 --no_flip
+'''
+
+
 if __name__ == '__main__':
     opt = TrainOptions().parse()   # get training options
     dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
