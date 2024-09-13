@@ -11,7 +11,7 @@ Sketch mapping is an effective technique to externalize spatial knowledge. Howev
 
 ### Sketch2Terrain offers a homogeneous system for different modes with customizable functions tailored to specific needs.
 ![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Interface_white.png?raw=true "The interface design.")
-(a) Observation Task Interface: This interface includes only the height adjustment function. An instruction panel displays task descriptions and timing information in front of the workspace. (b) Drawing Task Interface: This interface offers height adjustment, color change, redo, undo, and eraser functions. An instruction panel presents task descriptions and timing in front of the workspace. (c) Data Collection Mode Interface: By default, this interface uses a blue color scheme and includes functions for changing the terrain model and saving data.
+Interface design for (a) Training Data Collection: This interface includes functions for changing the terrain model and saving data. (b) Observation Task: This interface includes only the height adjustment function; (c) Drawing Task: This interface offers height adjustment, color change, redo, undo, and eraser functions. Both (b) and (c) equip an instruction panel that presents task descriptions and timing in front of the workspace.
 
 <!-- ### Sketch2Terrain provides real-time terrain generation, allowing users to iteratively sketch and visualise for more accurate results.
 ![Alt text](https://github.com/ETH-IKG/Sketch2Terrain/blob/main/images/Workflow.png?raw=true "The workflow.")
