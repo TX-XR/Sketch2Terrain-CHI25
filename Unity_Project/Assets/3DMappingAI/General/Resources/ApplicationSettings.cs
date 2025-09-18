@@ -35,7 +35,7 @@ namespace MappingAI
         [Header("Mapbox")]
         [SerializeField]
         [Tooltip("Important: Set your access token!!")]
-        private string mapboxAccessToken = "";
+        private string mapbox_AccessToken = "";
 
         [Header("Handness")]
         [Tooltip("The hand the stylus is attached to (LeftHand or RightHand)")]
@@ -83,7 +83,7 @@ namespace MappingAI
             set { _instance = value; }
         }
 
-        public string Mapbox_accessToken => mapboxAccessToken;
+        public string Mapbox_accessToken => mapbox_AccessToken;
         /// <summary>References to the RightHand</summary>
         public ControllerReferences RightHand => XRInputManager.Instance.rightHand;
 
