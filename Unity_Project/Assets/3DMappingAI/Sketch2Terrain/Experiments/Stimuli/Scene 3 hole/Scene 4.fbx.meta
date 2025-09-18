@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: beacdc2554b91b54a8be3213d945c58c
+guid: e7de3908d6b8ba944b2cafbca63c8932
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Terrain
+    second: {fileID: 2100000, guid: 865be8e734217ee4a9efa4fcc077670b, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Terrain
+    second: {fileID: 2800000, guid: f5a818f8a21e2384eb2a7bfcbe33b462, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -317,7 +317,7 @@ namespace MappingAI
             {
                 for (int j = 0; j < inputChunkSize; j++)
                 {
-                    data2D[i, j] = data1D[i * inputChunkSize + j];
+                    data2D[i, j] = data1D[i + j * inputChunkSize];
                 }
             }
             return data2D;

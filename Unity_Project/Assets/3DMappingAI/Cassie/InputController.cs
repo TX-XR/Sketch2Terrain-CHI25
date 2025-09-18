@@ -530,6 +530,7 @@ namespace MappingAI
             if (ApplicationSettings.Instance.ExperimentCondition == ExperimentCondition._2D)
             {
                 WorkspaceManager.Instance.DisableUpperBody();
+                WorkspaceManager.Instance.ActivateBottomPlane(true);
             }
             else
             {

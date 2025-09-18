@@ -4,11 +4,14 @@ using System.Collections.Generic;
 using Curve;
 using System.Text;
 
-/// <summary>
-/// The final stroke after beautification and auto-modify based on the constraints
-/// </summary>
+
 namespace MappingAI
 {
+
+
+    /// <summary>
+    /// The final stroke after beautification and auto-modify based on the constraints
+    /// </summary>
     public class _2DFinalStroke : Stroke
     {
         public bool DebugGizmos = false;

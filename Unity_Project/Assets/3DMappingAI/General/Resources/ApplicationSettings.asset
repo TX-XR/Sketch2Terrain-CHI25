@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mapboxAccessToken: pk.eyJ1IjoieGlhb3RpYW55aSIsImEiOiJjbG9weGR1NWUwZWUzMmtwZWlzNG1pZ2x0In0.j7PPGX7ChdStrKFBjZ4B4w
   primaryHand: 5
-  developmentMode: 1
-  experimentCondition: 2
+  developmentMode: 0
+  experimentCondition: 1
   ModeType: 0
   participantID: 0

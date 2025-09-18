@@ -1,11 +1,26 @@
 fileFormatVersion: 2
-guid: 18db531b66bce49499e2bdb06a8f8778
+guid: d2413934522b9dd4d9f26a6fab67e937
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StrokeMaterial (Instance)_0078FA
+    second: {fileID: 2100000, guid: c3c63a1fcd165e847bdd584c5f91d136, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Terrain
+    second: {fileID: 2100000, guid: a7548535ad215ca47b956ba5104fe66b, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Terrain
+    second: {fileID: 2800000, guid: 7a014a651c9181d42ac559e533cb3501, type: 3}
   materials:
-    materialImportMode: 2
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1

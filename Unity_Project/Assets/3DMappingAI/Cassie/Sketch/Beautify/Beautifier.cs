@@ -19,6 +19,7 @@ namespace MappingAI
 
         [SerializeField]
         private ParametersManager parameters = null;
+        private ComponentManager componentManager = null;
 
         // 3D GRID
         public Grid3D grid;
@@ -53,6 +54,12 @@ namespace MappingAI
 
             if (ConstraintSolver.LogPerformance)
                 ConstraintSolver.LogStream = new System.IO.StreamWriter("solver_log.txt");
+        }
+
+        private void Start()
+        {
+            componentManager = FindAnyObjectByType<ComponentManager>();
+            parameters = componentManager.GetCASSIEParametersProvider();
         }
 
         private void OnDestroy()

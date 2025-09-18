@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using Mapbox.Unity.MeshGeneration.Data;
 using System.Linq;
 using System;
+using System.ComponentModel;
 
 namespace MappingAI
 {
@@ -47,6 +48,7 @@ namespace MappingAI
         private InputStroke currentStroke = null;
         private InputStroke current2DStroke = null;
         private InputController inputController;
+        private ComponentManager componentManager;
         private bool createText = false;
         //private int currentSelectedPatchID = -1;
         //private void Awake()
@@ -56,10 +58,12 @@ namespace MappingAI
         //}
         private void Start()
         {
-            inputController = FindAnyObjectByType<InputController>();
+            componentManager = FindAnyObjectByType < ComponentManager > ();
+            inputController = componentManager.GetInputController();
             FinalStroke s = finalStrokePrefab.GetComponent<FinalStroke>();
             subdivisionsPerUnit = Mathf.CeilToInt(s.SubdivisionsPerUnit * 0.5f); // Reduce resolution by half
             colliderRadius = s.BaseCurveWidth * 0.5f; // The collider around the stroke is exactly the same radius as the stroke (BaseCurveWidth gives the diameter)
+            parameters = componentManager.GetCASSIEParametersProvider();
         }
 
         public void Init(bool surfacing)

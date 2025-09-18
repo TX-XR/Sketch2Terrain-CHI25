@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 82bae899fc9ec364d88a59e727f51ffa
+guid: 293d61ef39c864f4fa291e2b4bf0a730
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StrokeMaterial (Instance)_0078FA
+    second: {fileID: 2100000, guid: d6a4afbd9155d024aaf8102535fbad23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StrokeMaterial (Instance)_FF0019
+    second: {fileID: 2100000, guid: 92f883e2ea2d02c419a76312e719b511, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

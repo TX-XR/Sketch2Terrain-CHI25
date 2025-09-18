@@ -39,7 +39,7 @@ namespace MappingAI
             this.terrainCoord = terrainCoord;
             this.Zoom = zoom;
             this.TerrainName = terrainName;
-            this.TimeLimitForObservation = 120;
+            this.TimeLimitForObservation = 30;
             this.terrainSequence = terrainSequence;
         }
 

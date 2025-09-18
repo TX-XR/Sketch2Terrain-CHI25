@@ -10,7 +10,7 @@ Material:
   m_Name: DarkGray
   m_Shader: {fileID: 4800000, guid: fb9e10816a61c4d43ae7468f5ba93c33, type: 3}
   m_Parent: {fileID: 2100000, guid: 924d3bb27df5e7847a4758f9d51e836d, type: 2}
-  m_ModifiedSerializedProperties: 0
+  m_ModifiedSerializedProperties: 16
   m_ValidKeywords: []
   m_InvalidKeywords:
   - _GLOSSYREFLECTIONS_OFF
@@ -18,7 +18,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 3000
   stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
